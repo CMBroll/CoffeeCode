@@ -5,7 +5,148 @@
 
 
 /* COMIENZO CONTENIDO */
-
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+    }
+    
+    body {
+        background-color: var(--marronOscuro);
+    }
+    
+    hr {
+        color: var(--marronClaro);
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+    
+    .barraOferta {
+        background-color: #1e2d2c;
+        color: white;
+        height: 38px;
+        font-family: 'Unna', serif;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .navB {
+        background-color: #33241b;
+        height: 103px;
+    }
+    
+    .marcasCafeteras {
+        background-color: #19110d;
+    }
+    
+    .degradadoContenido {
+        background-image: var(--degradado);
+    }
+    
+    .tipografiaContenido {
+        color: var(--marronClaro);
+        font-family: 'Montserrat', sans-serif;
+        /* font-size: 13pt; */
+        text-align: justify;
+        padding: 25px 50px 25px 50px;
+    }
+    
+    .titulosH2 {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--marronClaro);
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .capsulasBg {
+        background-color: rgba(237, 220, 198, 0);
+        border-radius: 40px;
+        color: var(--marronClaro);
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        transition: 1s;
+    }
+    
+    .capsulasBg:hover{
+        background-color: rgba(237, 220, 198, 1);
+        color: var(--marronOscuro);
+    }
+    
+    .capsulasBg p {
+        transition: color 1s;
+    }
+    
+    .capsulasBg:hover p {
+        color: var(--marronOscuro);
+    }
+    
+    .botonCat {
+        background-color: var(--marronBoton);
+        border: none;
+    }
+    
+    
+    
+    /* INICIO DE PARALLAX */
+    
+    .parallax-cafe {
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .parallax-cafe .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .parallax-cafe video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+    }
+    
+    .parallax-cafe .content-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .parallax-cafe .content-container h2 {
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: lighter;
+        padding: 30px;
+    }
+    
+    /* FIN DE PARALLAX */
 /* FINAL DEL CONTENIDO */
 
 

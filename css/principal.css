@@ -1,35 +1,28 @@
+/* Estilos Generales*/ 
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+}
 /* COMIENZO NAVBAR */
-header{
-    height: 2rem;
-    color: white;
+header .topBanner{
+    height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: #1e2d2c;
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
     text-align: center;
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    padding-top: 1rem;
+    margin: 0;
 }
-
-header p{
-    position: relative;
-    top: 10px;
-}
-
 .imgLogo{
     width: 12rem;
     height: 5rem;
 }
-
-
-nav{
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-toggler{
-    position: absolute;
-    background-color: white !important;
-}
-
 .navbar.navbar-expand-lg{
     padding: 0 auto;
     margin: 0;
@@ -38,68 +31,58 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.navBar{
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-}
-
-.navbar-nav{
-    justify-content: start;
-    margin-left: 196px;
-}
-
 .navbar-nav a{
     font-size: 1rem;
     font-family: 'Unna', serif;
-    color: #eddcc6;
+    color: var(--marronClaro);
     text-decoration: none;
     text-align: center;
     gap: 50px;
 }
-
 .navbar-nav a:hover{
-    color: #eddcc6;
-    background-color:#1e2d2c ;
+    color: var(--marronClaro);
+    background-color:var(--verdeMoho);
     border-radius: 25px;
     transition: 0.5s;
 }
-
-.p-2.justify-content-end{
-   top: 5px;
-   position: relative;
-   display: flex;
-   flex-wrap: wrap;
+button.navbarBtn .navbar-toggler-icon{
+    background-color: var(--marronNavbar);
+    background-image: url(../src/img/CirculoCoco.svg);
+    width: 2rem;
+}
+.offcanvas{
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+@media (max-width: 992px){
+    .navbar-right li .btn i::after{
+        content: 'Login';
+        padding-left: 1rem;
+        font-family: 'Unna', serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #9d745e;
+    }
+    .navbar-right li .btn .fa-user::after{
+        content: 'Login';
+    }
+    .navbar-right li .btn .fa-cart-shopping::after{
+        content: 'Carrito';
+    }
 }
 
-.buttonNav{
-    justify-content: right;
-}
-
-.btn.btn-outline-light.me-3,
-.btn.btn-sm.btn-outline-light{
-    color: #eddcc6;
-    border-color: #eddcc6;
-    border-radius: 10px;
-    --bs-btn-padding-y: .25rem;
-    --bs-btn-padding-x: .5rem;
-    --bs-btn-font-size: .75rem;
-}
-.btn.btn-outline-light.me-3:hover,
-.btn.btn-sm.btn-outline-light:hover{
-    background-color: #1e2d2c;
-    scale: 1.2;
-    transition: 0.5s;
-}
-
-@media (max-width: 990px){
-    .p-2.justify-content-end,
-    .navBar.d-flex{
-        display: block !important;   
-     }
-    .navbar-nav{
-        margin-left: 0px;
+@media (min-width: 992px) { 
+    div.navContainer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-right{
+        position: absolute;
+        right: 7%;
     }
 }
 /* FINAL DEL NAVBAR */

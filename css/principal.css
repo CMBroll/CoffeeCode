@@ -10,6 +10,14 @@
 
 
 
-/* COMIENDO FOOTER */
+/* COMIENZO FOOTER */
+footer {
+    font-family: 'Montserrat', sans-serif, 'Unna', serif;
+    background-color: #32241b;
+  }
 
+  .bordes {
+    border-left: 1px solid #eddcc6;
+    border-right: 1px solid #eddcc6;
+  }
 /* FINAL DEL FOOTER */

@@ -47,7 +47,7 @@ header .topBanner{
 }
 button.navbarBtn .navbar-toggler-icon{
     background-color: var(--marronNavbar);
-    background-image: url(../src/img/CirculoCoco.svg);
+    background-image: url(../src/img/LieasOlas.svg);
     width: 2rem;
 }
 .offcanvas{
@@ -85,6 +85,23 @@ button.navbarBtn .navbar-toggler-icon{
         right: 7%;
     }
 }
+
+.olas {
+    display: flex;
+    width: 50px;
+    height: 32px;
+    background-position: 0px 0;
+    background-size: 50px;
+    animation: olasIcono 5s linear infinite;
+    background-repeat: repeat-x;
+}
+
+@keyframes olasIcono {
+    to {
+        background-position: -50px 0;
+    }
+}
+
 /* FINAL DEL NAVBAR */
 
 

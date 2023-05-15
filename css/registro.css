@@ -1,0 +1,22 @@
+.regBody{
+    background-color:#19110d;
+    display: block;
+    background-image: url("../src/img/CirculoCoco.svg");
+}
+
+.card-registro{
+  background-color: #eddcc6;
+  padding: 30px; 
+  border-radius: 9px;
+  color:#33241b;
+  margin: 0 auto;
+  margin-top: 5em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.campo-registro{
+  outline:none;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 2px 2px #33241b;
+}

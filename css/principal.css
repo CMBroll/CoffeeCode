@@ -8,7 +8,13 @@
     --marronBoton: #341f14;
 }
 /* COMIENZO NAVBAR */
-header .topBanner{
+
+.headerContainer {
+    background-color: #33241b;
+    justify-content: center;
+}
+
+.topBanner{
     height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
@@ -31,6 +37,7 @@ header .topBanner{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .navbar-nav a{
     font-size: 1rem;
     font-family: 'Unna', serif;
@@ -50,7 +57,13 @@ button.navbarBtn .navbar-toggler-icon{
     background-image: url(../src/img/LieasOlas.svg);
     width: 2rem;
 }
-.offcanvas{
+
+.offcanvas {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+}
+
+.burgerMenu {
     background-color: var(--marronNavbar);
     font-size: 1.5rem;
     border-top-right-radius: 25px;
@@ -65,12 +78,26 @@ button.navbarBtn .navbar-toggler-icon{
         font-weight: 400;
         color: #9d745e;
     }
-    .navbar-right li .btn .fa-user::after{
-        content: 'Login';
+
+    .navBody {
+        width: 68%;
+        justify-content: space-around;
+    } 
+
+    .headerContainer{
+        display: flex;
+        justify-content: space-between;
+     
     }
-    .navbar-right li .btn .fa-cart-shopping::after{
-        content: 'Carrito';
-    }
+
+}
+
+@media (max-width: 430px){
+
+    .navBody {
+        width: 100%;
+        justify-content: space-around;
+    } 
 }
 
 @media (min-width: 992px) { 
@@ -84,6 +111,22 @@ button.navbarBtn .navbar-toggler-icon{
         position: absolute;
         right: 7%;
     }
+    .headerContainer {
+        display: flex;
+    }
+    .botonesContainer {
+        position: absolute;
+        top: 9rem;
+        right: 1rem;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media (max-width: 374px) {
+    .navbar-brand img {
+        width: 8.6rem;
+    }
 }
 
 .olas {
@@ -94,6 +137,13 @@ button.navbarBtn .navbar-toggler-icon{
     background-size: 50px;
     animation: olasIcono 5s linear infinite;
     background-repeat: repeat-x;
+}
+
+.botonesContainer {
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
 
 @keyframes olasIcono {

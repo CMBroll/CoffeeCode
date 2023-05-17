@@ -19,17 +19,17 @@
 
 <body>
 
-    <header>
-        <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>   
+  <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>   
+  <header class="headerContainer">
         <nav class="navbar navbar-expand-lg navBody">
             <div class="container-fluid  navContainer">
-                <a class="navbar-brand" href="index.html"><img class="imgLogo" src="./src/img/LogoCOCO.svg" alt="logo CoCo"></a>
-                <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                    <span class="navbar-toggler-icon olas"></span>
-                </button>
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                  <span class="navbar-toggler-icon olas"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img class="imgLogo" src="./src/img/LogoCOCO.svg" alt="logo CoCo"></a>
+              <div class="offcanvas burgerMenu offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+              id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -51,20 +51,33 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                           <li>
-                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                              <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
-                            </button>
                           </li>
                           <li>
-                            <button type="button" class="btn">
-                              <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
-                            </button>
                           </li>
                         </ul>
                       </div>
-                </div>
+                    </div>
+                  </div>
+                </nav>
+            <div class="botonesContainer">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+              </button>
+             <button class="btn color-bg color-texto"type="button"data-bs-toggle="offcanvas"data-bs-target="#offcanvasRight"aria-controls="offcanvasRight"id="ver-carrito">
+               <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
+             </button>
+
+             <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+               <div class="offcanvas-header" >
+                 <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
+                 <button class="btn-close"data-bs-dismiss="offcanvas"aria-label="Close"></button>
+               </div>
+               <div class="contenidoCarrito offcanvas-body " id="canvas-container" >
+                 
+               </div>
             </div>
-        </nav>
+            </div>
+
     </header>
 
 

@@ -6,14 +6,78 @@ const agregarUsuario = document.getElementById('formRegistro');
 const nombreUsuario = document.getElementById('nombreUsu');
 const apellidoUsuario = document.getElementById('apellidoUsu')
 const mailUsuario = document.getElementById('mailUsu');
+const claveUsuario = document.getElementById('claveUsu')
 const crearUsuario = document.getElementById('crearUsu');
+
+/*
+const validar = () => {
+    if(nombreUsuario.value === "" || apellidoUsuario.value === "" || mailUsuario.value === "" || claveUsuario.value === ""){
+        alert("El campo esta vacio");
+        return false;
+    }else if (nombreUsuario.value.length >20 || apellidoUsuario.value.length >20){
+        alert("muy largo");
+        return false;
+    }else if(mailUsuario.value.length >50 || ){
+        alert("muy largo");
+        return false;
+    }
+};
+
+formRegistro.addEventListener('click', (e) =>{
+    e.preventDefault();
+    
+    const validar = () =>{
+        const nombreValor = nombreUsuario.value;
+        const apellidoValor = apellidoUsuario.value;
+        const mailValor = mailUsuario.value;
+        const claveValor = claveUsuario.value;
+   
+        if (nombreValor === ""){
+            alert("campo vacio")
+            noValido(nombreValor, "campo vacio");
+        }else{
+            esValido(nombreValor);
+        }
+    }
+    validar();
+})
+
+const noValido = (input, mensaje) =>{
+    const formControl = input.parentElement;
+    const aviso = formControl.querySelector(".parrafo");
+    aviso.innerText = mensaje;
+
+    
+}
+
+const esValido = (input, mensaje) =>{
+    const formControl = input.parentElement;
+
+
+}
+*/
+
+const validar = () =>{
+    const nombreValor = nombreUsuario.value;
+    const apellidoValor = apellidoUsuario.value;
+    const mailValor = mailUsuario.value;
+    const claveValor = claveUsuario.value;
+
+    if (nombreValor === ""){
+        alert("campo vacio")
+        noValido(nombreValor, "campo vacio");
+    }else{
+        esValido(nombreValor);
+    }
+}
 
 function uuidv4() {
     return crypto.randomUUID();
-  }
+  };
+
 
 crearUsuario.addEventListener('click', (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const nombre = nombreUsuario.value;
     const apellido = apellidoUsuario.value;

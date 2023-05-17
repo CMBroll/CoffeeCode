@@ -21,106 +21,110 @@
   </head>
   <body class="regBody">
     <main>
-      <form id="formRegistro" data-mode="add"> 
-      <div class="container card-registro text-center">
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <h2>Formulario de registro</h2>
-          </div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <label for="nombreUsu">Nombre</label>
-            <p>
-              <input
-                class="campo-registro w-100 p-2"
-                type="text"
-                id ="nombreUsu"
-                name="nombreUsu"
-                placeholder="Ingrese su nombre"
-                minlength="3"
-                maxlength="20"
-                title="Este campo solo permite letras y espacios en blanco"
-                required autofocus
-              />
-            </p>
-          </div>
-          <div class="col-md-10">
-            <label for="apellidoUsu">Apellido</label>
-            <p>
-              <input
-                class="campo-registro w-100 p-2"
-                type="text"
-                id="apellidoUsu"
-                name="apellidoUsu"
-                placeholder="Ingrese su apellido"
-                minlength="3"
-                maxlength="20"
-                title="Este campo solo permite letras y espacios en blanco"
-                required
-              />
-            </p>
-          </div>
-          
-          <div class="col-md-10">
-            <label for="mailUsu">Mail</label>
-            <p>
-              <input
-                class="campo-registro w-100 p-2"
-                type="email"
-                id="mailUsu"
-                name="mailUsu"
-                placeholder="Ingrese su correo"
-                autocomplete="on"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Ingrese un correo válido"
-                required
-              />
-            </p>
-          </div>
+      <form
+        id="formRegistro"
+        data-mode="add"
+      >
+        <div class="container card-registro text-center">
+          <div class="row justify-content-md-center">
             <div class="col-md-10">
-            <label>Contraseña</label>
-            <p>
-              <input
-                class="campo-registro w-100 p-2"
-                type="password"
-                placeholder="Ingrese al menos 8 caracteres"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                required
-              />
-            </p>
-          
-            <button
-              class="btn col-12"
-              style="background-color: #33241b; color: #eddcc6"
-              type="submit"
-              id="crearUsu"
-            >
-              Aceptar
-            </button>
+              <h2>Formulario de registro</h2>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <label for="nombreUsu">Nombre</label>
+              <p>
+                <input
+                  class="campo-registro w-100 p-2"
+                  type="text"
+                  id="nombreUsu"
+                  name="nombreUsu"
+                  placeholder="Ingrese su nombre"
+                  minlength="3"
+                  maxlength="20"
+                  title="Este campo solo permite letras y espacios en blanco"
+                  required autofocus
+                />
+              </p><div class="parrafo"></div>
+            </div>
+            <div class="col-md-10">
+              <label for="apellidoUsu">Apellido</label>
+              <p>
+                <input
+                  class="campo-registro w-100 p-2"
+                  type="text"
+                  id="apellidoUsu"
+                  name="apellidoUsu"
+                  placeholder="Ingrese su apellido"
+                  minlength="3"
+                  maxlength="20"
+                  title="Este campo solo permite letras y espacios en blanco"
+                  required
+                />
+              </p>
+            </div>
+
+            <div class="col-md-10">
+              <label for="mailUsu">Mail</label>
+              <p>
+                <input
+                  class="campo-registro w-100 p-2"
+                  type="email"
+                  id="mailUsu"
+                  name="mailUsu"
+                  placeholder="Ingrese su correo"
+                  autocomplete="on"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Ingrese un correo válido"
+                  required
+                />
+              </p>
+            </div>
+            <div class="col-md-10">
+              <label>Contraseña</label>
+              <p>
+                <input
+                  class="campo-registro w-100 p-2"
+                  type="password"
+                  id="claveUsu"
+                  placeholder="Ingrese al menos 8 caracteres"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  required
+                />
+              </p>
+
+              <button
+                class="btn col-12"
+                style="background-color: #33241b; color: #eddcc6"
+                type="submit"
+                id="crearUsu"
+              >
+                Aceptar
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
 
-    <div class="container mt-5">
-      <div class="row justify-content-md-center">
-        <table
-          id="listaUsu"
-          style="background-color: #eddcc6"
-          class="table table-hover"
-        >
-          <thead>
-            <tr>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellido</th>
-              <th scope="col">Mail</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <div class="container mt-5">
+        <div class="row justify-content-md-center">
+          <table
+            id="listaUsu"
+            style="background-color: #eddcc6"
+            class="table table-hover"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Mail</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
-    </div>
     </main>
     <script src="../js/usuarios.js"></script>
     <script

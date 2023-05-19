@@ -89,12 +89,8 @@ li.breadcrumb-item.active {
     text-align: center;
 }
 
-.detalleTamanio button:hover {
-    border: 2px solid var(--marronBoton);
-}
-
-.detalleTamanio button:focus {
-    background-color: var(--verdeMoho);
+.detalleTamanio button.tamañoNoDisponible{
+    background-color: #816f6398;
 }
 
 .cantidadProductWrap .cantidadBtn {
@@ -264,7 +260,9 @@ button.carousel-control-next span.carousel-control-next-icon {
         width: 100%;
         margin-top: 5%;
     }
-
+    .compraBtns .cantidadProductWrap {
+        padding-left: 20%;
+    }
     .compraBtns .cantidadProductWrap button {
         width: 30%;
     }
@@ -276,7 +274,7 @@ button.carousel-control-next span.carousel-control-next-icon {
         text-align: justify;
         padding: 5%;
     }
-    .productosRelWrapp .productosRelContainer .item{
+    .productosRelWrapp .productosRelContainer .capsulasBg{
         margin-left: auto;
         margin-right: auto;
         width: 17rem;

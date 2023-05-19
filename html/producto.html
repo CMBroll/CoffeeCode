@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café París - COCO</title>
+    <link rel="icon" href="../src/img/CirculoCoco.svg">
+    <!--Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="/css/producto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row breadcrumbWrap">
+                <div style="--bs-breadcrumb-divider: ''; --bs-breadcrumb-divider-color: #eddcc6;"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio ></a></li>
+                        <li class="breadcrumb-item"><a href="#">Paquetes ></a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Café</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row videoCafeWrapp">
+                <section class="parallaxCafe d-flex justify-content-center">
+                    <video src="../src/videos/RicoCafecito.mp4" muted loop autoplay></video>
+                    <img src="../src/img/CafeParis.svg" class="cafeNombre">
+                </section>
+            </div>
+            <div class="row productoWrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 productoImgWrapper">
+                            <div class="col-12 productoImgContent">
+                                <img src="https://i.ibb.co/h17c48M/Cafe-Paris.png" alt="Café París" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12 detallesWrapper">
+                            <h1 class="fw-bold">Café París</h1>
+                            <p class="detalleCategoria">Granos de café premium</p>
+                            <h4 class="detallePrecio">$3.999</h4>
+                            <p class="detalleTexto fw-normal">
+                                Disfruta la experiencia parisina con cada taza de nuestro Café París, un clásico con
+                                granos seleccionados y un sabor único en su punto justo.</p>
+                            <div class="intensidadWrapp d-flex">
+                                <p class="pt-4 pe-4 fw-bold">Intensidad</p>
+                                <img class="granoIntensidad" src="../src/img/GranoDeCafe.svg">
+                                <img class="granoIntensidad" src="../src/img/GranoDeCafe.svg">
+                                <img class="granoIntensidad" src="../src/img/GranoDeCafe.svg">
+                                <img class="granoIntensidad" src="../src/img/granoClaroCafe.svg">
+                                <img class="granoIntensidad" src="../src/img/granoClaroCafe.svg">
+                            </div>
+                            <div class="detalleTamanio">
+                                <h5 class="fs-5">Elegir tamaño</h5>
+                                <button>250 gr</button>
+                                <button>500 gr</button>
+                            </div>
+                            <div class="compraBtns">
+                                <div class="form-group text-white cantidadProductWrap">
+                                    <button class="btn cantidadBtn rounded-start" onclick="restar()">-</button>
+                                    <input class="inputCantidad cantidadBtn text-center" value="0" id="input-cantidad"
+                                        readonly>
+                                    <button class="btn cantidadBtn rounded-end" onclick="sumar()">+</button>
+                                </div>
+                                <button class="btn carritoBtn" type="button">AÑADIR A CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-1">
+                <div class="sobreCafeTexto">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="text-center pe-3 fw-bold">Sobre</h2>
+                        <img src="../src/img/CafeParis.svg" width="250">
+                    </div>
+                    <p class="fw-semibold pt-3">En nuestra cafetería, ofrecemos café de alta calidad controlado y
+                        analizado por expertos parisinos. Cada lote de granos es seleccionado a mano y tostado a la
+                        perfección
+                        para lograr un sabor suave, aroma aterciopelado y perfil de sabor equilibrado. Garantizamos la
+                        calidad de nuestro café a través de rigurosas pruebas de sabor y aroma, demostrando nuestro
+                        compromiso con la excelencia.</p>
+                </div>
+            </div>
+            <div class="row carouselWrapp">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex">
+                                <img src="https://i.ibb.co/D1H7f0q/caf-Granos.jpg" class="d-block w-50 "
+                                    alt="Granos de café">
+                                <div class="carouselText">
+                                    <h4 class="fw-bold">Granos exclusivamente seleccionados</h4>
+                                    <p class="text-justify fw-semibold">Cada grano es sometido a rigurosos controles de calidad y
+                                        tostado para ofrecerte
+                                        una experiencia única en cada taza. Es la
+                                        elección perfecta para aquellos que buscan saborear lo mejor del café.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="https://i.ibb.co/8rbNyDW/grano.jpg" class="d-block w-50" alt="Grano de café">
+                                <div class="carouselText">
+                                    <h4 class="fw-bold">Una taza única </h4>
+                                    <p class="text-justify fw-semibold"> Nuestro proceso de tostado es minucioso y riguroso para
+                                        obtener un sabor y aroma
+                                        excepcionales. Cada taza es una experiencia incomparable y deliciosa asegurando
+                                        en cada sorbo apreciar la esencia verdadera del café.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex">
+                                <img src="https://i.ibb.co/r5QZySn/tazaCafe.png" alt="Taza de Café"
+                                    class="d-block w-50">
+                                <div class="carouselText">
+                                    <h4 class="fw-bold">El complemento perfecto</h4>
+                                    <p class="text-justify fw-semibold">La opción preferida de aquellos que buscan
+                                        disfrutar de una taza de café de alta
+                                        calidad mientras trabajan en sus proyectos, estudian o simplemente disfrutan de
+                                        un momento de relajación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active indicatorCarousel" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="indicatorCarousel"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="indicatorCarousel"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container productosRelWrapp">
+            <h3 class="text-center pb-4">Productos relacionados</h3>
+            <div class="row productosRelContainer">
+                <div class="col-md-3 col-sm-8 slider-item text-white p-3 mb-3 capsulasBg item">
+                    <img src="https://i.ibb.co/9sk5DTn/CafeRoma.png" alt="Paquete de café" class="img-fluid">
+                    <p class="d-flex justify-content-center text-center lead pt-4">Café Roma</p>
+                </div>
+                <div class="col-md-3 col-sm-8 slider-item text-white p-3 mb-3 capsulasBg item">
+                    <img src="https://i.ibb.co/QJ3LRkM/CafeCoco.png" alt="Paquete de café" class="img-fluid">
+                    <p class="d-flex justify-content-center text-center lead pt-4">Café Coco</p>
+                </div>
+                <div class="col-md-3 col-sm-8 slider-item text-white p-3 mb-3 capsulasBg item">
+                    <img src="https://i.ibb.co/G7f09m1/Cafe-Italia.png" alt="Paquete de café" class="img-fluid">
+                    <p class="d-flex justify-content-center text-center lead pt-4">Café Italia</p>
+                </div>
+                <div class="col-md-3 col-sm-8 slider-item text-white p-3 mb-3 capsulasBg item">
+                    <img src="https://i.ibb.co/NmzMqNr/Cafe-Negro.png" alt="Paquete de café" class="img-fluid">
+                    <p class="d-flex justify-content-center text-center lead pt-4">Café Negro</p>
+                </div>
+            </div>
+    </main>
+    <!--FontAwesome Script-->
+    <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--JS Script-->
+    <script src="../js/producto.js"></script>
+</body>
+
+</html>

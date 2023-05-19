@@ -52,4 +52,18 @@ border-right: 1px solid #eddcc6;
   background: black;
 }
 
+.giro360{
+  transform: rotate(0deg);
+  animation: rotate 5s linear infinite; 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* FINAL DEL FOOTER */

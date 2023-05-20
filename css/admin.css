@@ -1,0 +1,159 @@
+body {
+    background-color: #160c0a;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #eddcc6;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+    color: #eddcc6;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+hr {
+    color: #eddcc6;
+}
+
+thead {
+    color: #eddcc6;
+    font-weight: bold;
+}
+
+tbody {
+    color: #281c16;
+    background-color: #eddcc6;
+}
+
+.container {
+    max-width: 1700px;
+}
+
+.navBackground {
+    background-color: transparent;
+}
+
+.navBackground a {
+    background-color: transparent;
+    color: #eddcc6;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.navBackground a:hover {
+    background-color: #eddcc6;
+    color: #281c16;
+    border-radius: 999px;
+}
+
+.borderColor {
+    border-color: #eddcc6;
+}
+
+.olas {
+    background-image: url(/src/img/LieasOlas.svg);
+}
+
+.btnAgregar {
+    background-color: #eddcc6;
+    color: #281c16;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 2.5rem 7rem 2.5rem 7rem;
+    border-radius: 999px;
+    border: none;
+    transition: 1s;
+}
+
+.btnAgregar:hover {
+    background-color: #4e372b;
+    color: #eddcc6;
+}
+
+.btnAgregar:active {
+    background-color: #4e372b !important;
+    color: #eddcc6 !important;
+}
+
+.subtitulo h3 {
+    color: #eddcc6;
+    font-weight: 400;
+}
+
+.table tbody tr {
+    height: 60px;
+    /* Establece la altura deseada */
+    border-color: #281c16;
+    vertical-align: middle;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    /* Centra el contenido verticalmente */
+}
+
+.botonCont {
+    background-color: #281c16;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    opacity: 80%;
+    transition: 0.7s;
+}
+
+.botonCont:hover {
+    opacity: 100%;
+}
+
+.botoDerecha {
+    position: relative;
+    right: 0;
+}
+
+/* ESTILO MODAL */
+.modal-content {
+    background-color: #281c16;
+    color: #eddcc6;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    margin-bottom: 1rem;
+}
+
+.modal-content input,
+.modal-content select {
+    background-color: #eddcc6;
+    height: 3.2rem;
+    border-radius: 999px;
+}
+
+.modal-content button {
+    background-color: #eddcc6;
+    border: solid 2px #eddcc6;
+    color: #281c16;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.btnCerrarGuardar button {
+    background-color: transparent;
+    border-color: #eddcc6;
+    color: #eddcc6;
+    transition: 0.5s;
+}
+
+.btnCerrarGuardar button:hover {
+    background-color: #101c1b;
+    border-color: #eddcc6;
+    color: #eddcc6;
+}

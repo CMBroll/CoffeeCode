@@ -35,10 +35,10 @@ h5 {
   padding: 1rem;
 }
 
-label[for="nombre"],
-label[for="apellido"],
-label[for="email"],
-label[for="contrasena"] {
+label[for="nombreUsu"],
+label[for="apellidoUsu"],
+label[for="mailUsu"],
+label[for="claveUsu"] {
   font-size: 1.3rem;
 }
 
@@ -104,6 +104,23 @@ p {
   background-size: 1920px;
   animation: mover-fondo 20s linear infinite;
 }
+
+.parrafoNombre{
+  font-size: smaller;
+}
+
+.parrafoUsuario{
+  font-size: smaller;
+}
+
+.parrafoMail{
+  font-size: smaller;
+}
+
+.parrafoClave{
+  font-size: smaller;
+}
+
 
 @keyframes mover-fondo {
   to {

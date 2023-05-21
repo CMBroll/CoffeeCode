@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/catalogo.css">
+    <title>Catalogo</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container d-flex flex-column my-5">
+            <div class="row categoriaItems">
+                <div class="col-12 col-md-3 py-2 todos">
+                    <button class="btn btn-primary botonFiltro" id="todos">TODOS</button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                    <button class="btn btn-primary botonFiltro" id="capsulas">CAPSULAS</button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                    <button class="btn btn-primary botonFiltro" id="granos">GRANOS DE CAFE</button>
+                </div>
+                <div class="col-12 col-md-3 py-2">
+                    <button class="btn btn-secondary botonFiltro" id="cafeteras" disabled>CAFETERAS</button>
+                </div>
+            </div>
+            <hr>
+            <div class="lista-productos d-flex flex-wrap justify-content-center">
+                <div class="product-item" id="granos">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="granos">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="granos">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="granos">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3"
+                        category="granos">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="capsulas">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3 "
+                        category="capsulas">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CapsulaCafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="capsulas">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CapsulaCafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item" id="capsulas">
+                    <div class="box d-flex flex-column justify-content-between align-items-center p-3">
+                        <h3>CAFE NEGRO</h3>
+                        <div class="d-flex imgAdapt">
+                            <img src="/src/img/CapsulaCafeNegro.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex mt-3 gap-2">
+                            <p>Precio:</p>
+                            <span class="font-weight-bold">$2000</span>
+                        </div>
+                        <div class="d-flex flex-column anchoContenedorBoton">
+                            <button class="botonCarrito">Agregar al carrito</button>
+                            <button class="botonCarrito">Mas información</button>
+                        </div>
+                    </div>
+                    <div id="productosContainer"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="/js/filtroProducto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -18,12 +18,13 @@ body {
 }
     
 h1 {
-    font-size: 35px;
+    font-size: 70px;
     color: #eddcc6;
 }
 
 p {
     color: #eddcc6;
+    font-size: 20px;
 }
 
 img {

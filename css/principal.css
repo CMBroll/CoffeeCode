@@ -22,8 +22,8 @@ hr {
     color: var(--marronClaro);
 }
 
-.container {
-    max-width: 90%;
+.contenedor {
+    max-width: 90%
 }
 
 .barraOferta {

@@ -181,7 +181,7 @@ button.navbarBtn .navbar-toggler-icon {
     background-color: transparent;
     padding: 0 10px;
     color: #725546;
-    transition: all .3s ease
+    transition: all .3s ease;
 }
 
 .formItem input:focus+label,

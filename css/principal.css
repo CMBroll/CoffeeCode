@@ -73,11 +73,6 @@ button.navbarBtn .navbar-toggler-icon{
     }
 }
 
-@media (min-width: 992px) { 
-    div.navContainer{
-
-/* Estilos Generales*/
-
 .headerContainer {
     background-color: #33241b;
     justify-content: center;

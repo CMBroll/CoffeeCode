@@ -712,5 +712,68 @@ hr {
 
 
 /* COMIENDO FOOTER */
+footer {
+    font-family: 'Montserrat', sans-serif, 'Unna', serif;
+    background-color: #32241b;
+  }
+  
+  
+  .bordes {
+  border-left: 1px solid #eddcc6;
+  border-right: 1px solid #eddcc6;
+  }
+  
+  
+  .logoFooter {
+    max-width: 95%;
+  }
+  
+  @media (min-width: 992px) {
+    .logoFooter {
+      max-width: 55%;
+    }
+  }
+  
+  footer p {
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .enlacesFooter{
+    color: #eddcc6;
+    text-decoration: none;
+  
+  }
+  
+  .enlacesFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  
+  .borderTopFooter{
+    width: 100%;
+    height: 0px;
+    background: black;
+  }
+  
+  .giro360{
+    transform: rotate(0deg);
+    animation: rotate 5s linear infinite; 
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
+  @media (min-width: 768px) and (max-width: 979px) {
+    .container .footerWrap{
+        padding: 0;
+    }
+  }
 /* FINAL DEL FOOTER */

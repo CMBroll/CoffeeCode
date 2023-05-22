@@ -1,4 +1,4 @@
-* {
+main {
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
 }
@@ -38,6 +38,7 @@ img {
     height: 30rem;
     border-radius: 1rem;
     box-shadow: 2px 1px 15px -1px black;
+    transition: 1s;
 }
 
 .card:hover{

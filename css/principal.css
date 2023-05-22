@@ -295,6 +295,7 @@ a.registrarse {
         width: 90vw;
     }
 }
+
 .offcanvasBg {
     background-image: url(../src/img/CirculoCoco.svg);
     background-repeat: no-repeat;
@@ -354,7 +355,6 @@ a.registrarse {
     border-radius: 1rem;    
     padding: 1rem;
 }
-
 
 .infoCarrito {
 display: flex;

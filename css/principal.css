@@ -35,7 +35,7 @@ border-right: 1px solid #eddcc6;
 
 
 .enlacesFooter{
-  color: #eddcc6;;
+  color: #eddcc6;
   text-decoration: none;
 
 }
@@ -65,5 +65,6 @@ border-right: 1px solid #eddcc6;
     transform: rotate(360deg);
   }
 }
+
 
 /* FINAL DEL FOOTER */

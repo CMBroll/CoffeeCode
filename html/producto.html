@@ -23,7 +23,7 @@
     <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>
     <header class="headerContainer">
         <nav class="navbar navbar-expand-lg navBody">
-            <div class="container-fluid  navContainer">
+            <div class="container-fluid navContainer">
                 <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                     <span class="navbar-toggler-icon olas"></span>
@@ -65,7 +65,7 @@
                 <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
             </button>
 
-            <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
+            <div class="offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
@@ -133,9 +133,9 @@
                 <div style="--bs-breadcrumb-divider: ''; --bs-breadcrumb-divider-color: #eddcc6;"
                     aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Inicio ></a></li>
-                        <li class="breadcrumb-item"><a href="#">Catálogo ></a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Café París</li>
+                        <li class="breadcrumb-item fw-semibold"><a href="#">Inicio ></a></li>
+                        <li class="breadcrumb-item fw-semibold"><a href="#">Catálogo ></a></li>
+                        <li class="breadcrumb-item active fw-bold" aria-current="page">Café París</li>
                     </ol>
                 </div>
             </div>
@@ -286,7 +286,48 @@
                     <p class="d-flex justify-content-center text-center lead pt-4">Café Negro</p>
                 </div>
             </div>
+        </div>
     </main>
+    <footer>
+        <div class="borderTopFooter d-flex justify-content-center align-items-center justify-content-center">
+            <img class="giro360" src="/src/img/CirculoCoco.svg" alt="Logo Circular de Coco"
+                class="logoFooter p-3 img-fluid d-none d-lg-block" width="8%">
+        </div>
+        <footer class="container-fluid">
+            <div class="row p-5 align-content-center justify-content-center ">
+                <section
+                    class="col-sm-12 col-md-3 col-lg-3 col-xl-3 justify-content-start align-items-start text-center text-md-start">
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter fw-bold">Menú</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Nuestros productos</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Paquetes de Café</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Cafeteras</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Accesorios</a></div>
+                    <div class="p-1"><a href="./html/sobreNososotros.html" class="enlacesFooter">Sobre Nosotros</a>
+                    </div>
+                    <div class="p-1"><a href="./html/contacto.html" class="enlacesFooter">Contacto</a></div>
+                </section>
+
+                <section
+                    class="mt-5 p-2 col-sm-12 col-md-6 col-lg-6 col-xl-6 justify-content-center align-items-center">
+                    <div class="text-center bordes">
+                        <a href="index.html"><img class="logoFooter" src="/src/img/LogoFooter.svg"
+                                alt="Logo de Coco" /></a>
+                    </div>
+                </section>
+                <section
+                    class="mb-2 col-sm-12 col-md-3 col-lg-3 col-xl-3 justify-content-end align-items-end text-center text-md-end">
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter fw-bold">Integrantes</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Aguirre Meny Alberto</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Broll César Mauricio</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Cavanna Victoria</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Domski Paula</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">González Gauna María
+                            Agustina</a></div>
+                    <div class="p-1"><a href="./html/error404.html" class="enlacesFooter">Martinez Lucía</a></div>
+                    <div class="p-1"><a href="./html/contacto.html" class="enlacesFooter">Samaniego Estéban</a></div>
+                </section>
+            </div>
+        </footer>
     <!--FontAwesome Script-->
     <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
     <!--Bootstrap Script-->
@@ -295,6 +336,7 @@
         crossorigin="anonymous"></script>
     <!--JS Script-->
     <script src="../js/producto.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

@@ -59,11 +59,11 @@
 
 button.navbarBtn .navbar-toggler-icon {
     background-color: var(--marronNavbar);
-    background-image: url(../src/img/LieasOlas.svg);
+    background-image: url(../src/img/LineasOlas.svg);
     width: 2rem;
 }
 
-.offcanvas {
+.offcanvas .offcanvas-body {
     background-color: var(--marronNavbar);
     font-size: 1.5rem;
 }
@@ -124,8 +124,9 @@ button.navbarBtn .navbar-toggler-icon {
     box-shadow: 0px 0px 5px 0px var(--marronClaro);
 }
 
-.modal-header {
+.modal-content .modal-header {
     border: none;
+    border-bottom: 0;
 }
 
 .modal-header button.btn-close {
@@ -213,6 +214,9 @@ a.registrarse {
     padding: 1% 5%;
     margin: 0 3% 2%;
     color: #e6edf3;
+}
+.navContainer .offcanvas .offcanvas-header{
+    background-color: var(--marronNavbar);
 }
 
 @media (max-width: 992px) {
@@ -307,7 +311,6 @@ body main {
 .breadcrumb-item a {
     text-decoration: none;
     color: var(--marronClaro);
-    font-weight: 450;
 
 }
 .breadcrumb-item a:hover {
@@ -315,7 +318,6 @@ body main {
 }
 li.breadcrumb-item.active {
     color: var(--marronClaro);
-    font-weight: 550;
 }
 
 /*Sección detalle producto*/
@@ -497,6 +499,7 @@ button.carousel-control-next span.carousel-control-next-icon {
 
 .productosRelWrapp {
     padding-top: 10%;
+    padding-bottom: 10rem;
 }
 
 /*==MEDIA QUERIES==*/
@@ -583,3 +586,60 @@ button.carousel-control-next span.carousel-control-next-icon {
         display: none;
     }
 }
+/* COMIENZO FOOTER */
+footer {
+    font-family: 'Montserrat', sans-serif, 'Unna', serif;
+    background-color: #32241b;
+  }
+  
+  
+  .bordes {
+  border-left: 1px solid #eddcc6;
+  border-right: 1px solid #eddcc6;
+  }
+  
+  
+  .logoFooter {
+    max-width: 95%;
+  }
+  
+  @media (min-width: 992px) {
+    .logoFooter {
+      max-width: 55%;
+    }
+  }
+  
+  
+  .enlacesFooter{
+    color: #eddcc6;;
+    text-decoration: none;
+  
+  }
+  
+  .enlacesFooter:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  
+  .borderTopFooter{
+    width: 100%;
+    height: 0px;
+    background: black;
+  }
+  
+  .giro360{
+    transform: rotate(0deg);
+    animation: rotate 5s linear infinite; 
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* FINAL DEL FOOTER */

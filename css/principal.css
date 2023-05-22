@@ -1,3 +1,12 @@
+/* ESTILOS GENERALES */
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+}
 /* COMIENZO NAVBAR */
 /* Estilos Generales*/
 :root {
@@ -8,8 +17,6 @@
     --verdeMoho: #1e2d2c;
     --marronBoton: #341f14;
 }
-
-/* COMIENZO NAVBAR */
 
 .headerContainer {
     background-color: #33241b;
@@ -734,6 +741,7 @@ footer {
     }
   }
   
+
   footer p {
     margin: 0;
     margin-left: 10px;
@@ -742,14 +750,13 @@ footer {
   .enlacesFooter{
     color: #eddcc6;
     text-decoration: none;
-  
   }
   
   .enlacesFooter:hover{
     cursor: pointer;
     text-decoration: underline;
   }
-  
+
   
   .borderTopFooter{
     width: 100%;

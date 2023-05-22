@@ -328,6 +328,10 @@ footer {
     }
   }
   
+  footer p {
+    margin: 0;
+    margin-left: 10px;
+  }
   
   .enlacesFooter{
     color: #eddcc6;
@@ -358,6 +362,12 @@ footer {
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    .container .footerWrap{
+        padding: 0;
     }
   }
 /* FINAL DEL FOOTER */

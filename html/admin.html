@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link" href="#">Catalogo</a>
+                        <a class="nav-link" href="/html/catalogo.html">Catalogo</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#">Sobre nosotros</a>
@@ -43,209 +43,168 @@
 </header>
 
 <body>
-    <main>
+      <main>
+        <article>
 
-        <h1 class="d-flex justify-content-center mt-5">ADMINISTRACIÓN</h1>
+            <h1 class="d-flex justify-content-center mt-5 mb-5">ADMINISTRACION</h1>
 
-        <section>
-                <div class="d-flex justify-content-center mt-4">
-                    <button type="button" class="btn btn-primary btnAgregar mx-5 mb-5" data-bs-toggle="modal" data-bs-target="#modal">Agregar producto</button>
-                </div>
-
-            <!--Inicio modal con Formulario-->
-            <div id="modal" class="modal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">AGREGAR PRODUCTO</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"> <i class="fas fa-times-circle"></i></button>
+            <div class="button-agregar">
+                <section>
+                 
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="button" class="button-color btn btnAgregar btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modal">Agregar Producto</button>
                         </div>
-                        <form id="id-form" class="needs-validation" novalidate>
-                            <div class="modal-body">
-                                <div>
-                                    <label for="codigo" class="form-label">Codigo automatico</label>
-                                    <input type="text" id="codigoProducto" class="form-control"
-                                        placeholder="El codigo se generara automaticamente" disabled>
-                                    <div class="valid-feedback">
-                                        Todo bien.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        El valor minimo es 8 y maximo es 16.
-                                    </div>
-                                </div>
-                                <div>
-                                    <label class="form-label" for="categoria">Categoria</label>
-                                    <select class="form-select" id="categoria" required>
-                                        <option selected>Cápsula</option>
-                                        <option value="ProtectorSolar">Granos</option>
-                                        <option value="All">Todos</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label for="nombreProducto" class="form-label">Nombre</label>
-                                    <input type="text" id="nombreProducto" class="form-control" required
-                                        minlength="5" maxlength="20" placeholder="Ingrese el nombre del producto"
-                                        pattern="[a-zA-Z]+(\s[a-zA-Z]+)?">
-                                    <div class="valid-feedback">
-                                        Todo bien.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        El nombre ingresado debe de contar con un minimo de 5 letras y maximo
-                                        20.
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="precio" class="form-label">Precio</label>
-                                    <input type="text" id="precio" class="form-control" required
-                                        pattern="[0-9]*" min="1" maxlength="12" placeholder="Ingrese el precio">
-                                    <div class="valid-feedback">
-                                        Todo bien.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        El valor numerico ingresado minimo es de 1 y el maximo es de 12
-                                        caracteres
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="descripcion" class="form-label">Descripción</label>
-                                    <textarea id="descripcion" class="form-control" required minlength="25"
-                                        maxlength="200"></textarea>
-                                    <div class="valid-feedback">
-                                        Todo bien.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        El texto ingresado debe de contar con un minimo de 25 caracteres y un
-                                        maximo de 200.
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="url" class="form-label">URL de la imagen</label>
-                                    <input type="text" id="url" class="form-control" required
-                                        placeholder="Ingrese la dirección de la imagen">
-                                    <div class="valid-feedback">
-                                        Todo bien.
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Debes poner un URL dentro del espacio vacio.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer d-flex justify-content-center gap-3 btnCerrarGuardar">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary" id="cerrarModal">Guardar cambios</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!--Fin modal con Formulario-->
-        </section>
 
+                    <!--Inicio modal con Formulario-->
+                    <div id="modal" class="modal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Agregar Producto</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form id="id-form" class="needs-validation" novalidate>
+                                    <div class="modal-body">
+                                        <div>
+                                            <label for="codigo" class="form-label">El codigo se genera de forma
+                                                automatica</label>
+                                            <input type="text" id="codigoProducto" class="form-control"
+                                                placeholder="codigo" disabled>
+                                            <div class="valid-feedback">
+                                                Todo bien.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                El valor minimo es 8 y maximo es 16.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label class="form-label" for="categoria">Categoria</label>
+                                            <select class="form-select" id="categoria" required>
+                                                <option selected>Granos</option>
+                                                <option value="Capsulas">Capsulas</option>
+                                                <option value="All">Todos</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="nombreProducto" class="form-label"> Nombre</label>
+                                            <input type="text" id="nombreProducto" class="form-control" required
+                                                minlength="5" maxlength="20" placeholder="Nombre"
+                                                pattern="[a-zA-Z]+(\s[a-zA-Z]+)?">
+                                            <div class="valid-feedback">
+                                                Todo bien.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                El nombre ingresado debe de contar con un minimo de 5 letras y maximo
+                                                20.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="precio" class="form-label">Precio</label>
+                                            <input type="text" id="precio" class="form-control" required
+                                                pattern="[0-9]*" min="1" maxlength="12" placeholder="Precio">
+                                            <div class="valid-feedback">
+                                                Todo bien.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                El valor numerico ingresado minimo es de 1 y el maximo es de 12
+                                                caracteres
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="descripcion" class="form-label"> Descripcion</label>
+                                            <textarea id="descripcion" class="form-control " required minlength="25"
+                                                maxlength="200"></textarea>
+                                            <div class="valid-feedback">
+                                                Todo bien.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                El texto ingresado debe de contar con un minimo de 15 caracteres y un
+                                                maximo de 150.
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="url" class="form-label">Imagen por URL</label>
+                                            <input type="text" id="url" class="form-control" required
+                                                placeholder="URL de la imagen">
+                                            <div class="valid-feedback">
+                                                Todo bien.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Debes poner un URL dentro del espacio vacio.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary" id="cerrarModal">Guardar cambios</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fin modal con Formulario-->
+                </section>
+            </div>
+        </article>
         <div class="container">
             <div class="subtitulo">
                 <h3>TABLA DE PRODUCTOS</h3>
                 <hr class="mb-4">
             </div>
-
-            <div class="tables table-responsive mt-5 mb-5">
-                <table class="table" id="listadeproductos">
-                    <div class="d-flex flex-column">
-                        <table class="table ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Codigo</th>
-                                    <th scope="col">Categoria</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Descripción</th>
-                                    <th scope="col">Url</th>
-                                    <th class="text-end" scope="col">Editar / Eliminar</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">234442</th>
-                                    <td>Cápsulas</td>
-                                    <td>Cápsula Colombia</td>
-                                    <td>$3000</td>
-                                    <td>Premium</td>
-                                    <td>https://i.ibb.co/Dg1MRMf/Capsula-Cafe-Roma.png</td>
-                                    <td>
-                                        <div class="d-flex gap-3 justify-content-end">
-                                            <button class="botonCont">
-                                                <img src="/src/img/editar.svg" alt="">
-                                            </button>
-                                            <button class="botonCont">
-                                                <img src="/src/img/eliminar.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">234545</th>
-                                    <td>Granos</td>
-                                    <td>Granos Coco</td>
-                                    <td>$4500</td>
-                                    <td>Premium</td>
-                                    <td>https://i.ibb.co/QJ3LRkM/CafeCoco.png</td>
-                                    <td class="d-flex gap-3 justify-content-end">
-                                        <div class="d-flex gap-3">
-                                            <button class="botonCont">
-                                                <img src="/src/img/editar.svg" alt="">
-                                            </button>
-                                            <button class="botonCont">
-                                                <img src="/src/img/eliminar.svg" alt="">
-                                            </button>
-                                        </div>
-                                    </td>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-            </div>
-
+        <article>
+            <section>
+                <!--Inicio Tabla de Productos-->
+          
+                    <table class="table" id="listadeproductos">
+                        <thead>
+                            <tr>
+                                <th scope="col">Codigo</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">URL</th>
+                                <th scope="col"></th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <!--Fin Tabla de Productos-->
+            </section>
             <div class="container">
                 <div class="subtitulo">
                     <h3>TABLA DE USUARIO</h3>
                     <hr class="mb-4">
                 </div>
-
-                <div class="table-responsive mt-5 mb-5">
-                    <table class="table" id="listadeproductos">
+            <section>
+                
+                <!--Inicio Tabla de Usuarios-->
+                    <table class="table" id="listaDeUsuarios">
                         <thead>
                             <tr>
-                                <th scope="col">Usuario</th>
-                                <th scope="col">E-mail</th>
-                                <th scope="col">Admin</th>
-                                <th class="text-end" scope="col">Eliminar</th>
+                                <th scope="col">Nombre de Usuario</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Contraseña</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>cocoadmin</td>
-                                <td>admin@coco.com</td>
-                                <td>AdminCoco</td>
-                                <td class="text-end">
-                                    <div class="d-flex gap-3 justify-content-end">
-                                        <button class="botonCont mr-5">
-                                            <img src="/src/img/eliminar.svg" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tablaUsuarios"></tbody>
                     </table>
                 </div>
-
-            </div>
-
+                <!--Fin Tabla de Usuarios-->
+            </section>
+        </article>
     </main>
 
-
+    <script type="module" src="../js/administracion.js"></script>
+    <script type="module" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

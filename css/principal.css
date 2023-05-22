@@ -1,5 +1,4 @@
-/* COMIENZO NAVBAR */
-/* Estilos Generales*/
+/* Estilos Generales*/ 
 :root {
     --marronClaro: #eddcc6;
     --marronNavbar: #33241b;
@@ -8,6 +7,76 @@
     --verdeMoho: #1e2d2c;
     --marronBoton: #341f14;
 }
+/* COMIENZO NAVBAR */
+header .topBanner{
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    padding-top: 1rem;
+    margin: 0;
+}
+.imgLogo{
+    width: 12rem;
+    height: 5rem;
+}
+.navbar.navbar-expand-lg{
+    padding: 0 auto;
+    margin: 0;
+    background-color: #33241b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.navbar-nav a{
+    font-size: 1rem;
+    font-family: 'Unna', serif;
+    color: var(--marronClaro);
+    text-decoration: none;
+    text-align: center;
+    gap: 50px;
+}
+.navbar-nav a:hover{
+    color: var(--marronClaro);
+    background-color:var(--verdeMoho);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+button.navbarBtn .navbar-toggler-icon{
+    background-color: var(--marronNavbar);
+    background-image: url(../src/img/CirculoCoco.svg);
+    width: 2rem;
+}
+.offcanvas{
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+@media (max-width: 992px){
+    .navbar-right li .btn i::after{
+        content: 'Login';
+        padding-left: 1rem;
+        font-family: 'Unna', serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #9d745e;
+    }
+    .navbar-right li .btn .fa-user::after{
+        content: 'Login';
+    }
+    .navbar-right li .btn .fa-cart-shopping::after{
+        content: 'Carrito';
+    }
+}
+
+@media (min-width: 992px) { 
+    div.navContainer{
+
+/* Estilos Generales*/
 
 .headerContainer {
     background-color: #33241b;
@@ -827,10 +896,16 @@ a.registrarse {
 
 @media (min-width: 992px) {
     div.navContainer {
+
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
+    }
+
+    .navbar-right{
+        position: absolute;
+        right: 7%;
     }
 
     .navbar-right {
@@ -874,7 +949,7 @@ a.registrarse {
 
 
 
-/* COMIENZO CONTENIDO */    
+/* COMIENZO CONTENIDO */  
 body {
     background-color: var(--marronOscuro);
 }

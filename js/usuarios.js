@@ -104,6 +104,7 @@ const enviarFormulario = () => {
     form.reset();
     form.dataset.mode = "add";
     guardarUsuariosEnLocalStorage();
+    window.location.href = '/index.html'
 };
 
 const guardarUsuariosEnLocalStorage = () => {

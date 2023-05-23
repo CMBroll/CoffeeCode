@@ -2,7 +2,9 @@ body {
     background-color: #160c0a;
     font-family: "Montserrat", sans-serif;
 }
-
+main {
+    padding: 10%;
+}
 h1 {
     color: #eddcc6;
     font-family: "Montserrat", sans-serif;

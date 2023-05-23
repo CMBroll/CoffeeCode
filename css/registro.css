@@ -1,3 +1,4 @@
+
 body {
   background-color: #160c0a;
   display: flex;
@@ -51,6 +52,7 @@ label[for="claveUsu"] {
   color: #eddcc6;
   background-color: #422f25;
   border-color: #281c16;
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -106,19 +108,24 @@ p {
 }
 
 .parrafoNombre{
-  font-size: smaller;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 0;
 }
 
 .parrafoUsuario{
-  font-size: smaller;
+  font-size: 12px;
+  margin-left: 12px;
 }
 
 .parrafoMail{
-  font-size: smaller;
+  font-size: 12px;
+  margin-left: 12px;
 }
 
 .parrafoClave{
-  font-size: smaller;
+  font-size: 12px;
+  margin-left: 12px;
 }
 
 

@@ -244,7 +244,7 @@ obtenerUsuarios.forEach((usuario) => {
     const usuario = obtenerUsuarios.find((usuario) => usuario.email === correo)
     
     swal({
-      title: "Está seguro de que desea borrar este producto?",
+      title: "Está seguro de que desea borrar este usuario?",
       text: "Una vez borrado no puede recuperarlo",
       icon: "warning",
       buttons: true,
@@ -258,7 +258,7 @@ obtenerUsuarios.forEach((usuario) => {
         localStorage.setItem("usuarios", JSON.stringify(obtenerUsuarios));
         const fila = document.getElementById(`fila-${correo}`)
         fila.remove()
-        swal("El producto fue eliminado exitosamente", {
+        swal("El usuario fue eliminado exitosamente", {
           icon: "success",
         });
       } else {
@@ -268,3 +268,4 @@ obtenerUsuarios.forEach((usuario) => {
   
   }
   })
+

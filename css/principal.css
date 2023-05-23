@@ -120,7 +120,6 @@ button.navbarBtn .navbar-toggler-icon{
     border-radius: 25px;
     transition: 0.5s;
 }
-
 button.navbarBtn .navbar-toggler-icon {
     background-color: var(--marronNavbar);
     background-image: url(../src/img/LieasOlas.svg);

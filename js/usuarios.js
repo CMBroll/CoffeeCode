@@ -1,19 +1,11 @@
-
-
 let usuarios = [];
-
-const listaUsuarios = document.getElementById('listaUsuarios');
-const agregarUsuario = document.getElementById('form-registro');
-const nombreUsuario = document.getElementById('nombre');
-const apellidoUsuario = document.getElementById('apellido')
-const mailUsuario = document.getElementById('email');
-const claveUsuario = document.getElementById('contrasena')
+const inputNombre = document.getElementById("nombre");
+const inputApellido = document.getElementById("apellido");
+const inputEmail = document.getElementById("email");
+const inputContrasena = document.getElementById("contrasena");
+const form = document.querySelector("form");
 const crearUsuario = document.getElementById('crear-usuario');
-const parrafoNombre = document.querySelector('.parrafoNombre')
-const parrafoUsuario = document.querySelector('.parrafoUsuario')
-const parrafoMail = document.querySelector('.parrafoMail')
-const parrafoClave = document.querySelector('.parrafoClave')
-
+const listaUsuarios = document.getElementById('listaUsuarios');
 const inputs = document.querySelectorAll('#formRegistro input');
 
 const expresiones = {
@@ -79,40 +71,44 @@ inputs.forEach((input) => {
 function uuidv4() {
     return crypto.randomUUID();
   };
-  // const admin = {
-  //   id: "000",
-  //   nombre: "Coco",
-  //   apellido: "admin",
-  //   mail: "admin@coco.com",
-  //   clave: "AdminCoco",
-  //   mode: "add"
-  // };
-  // usuarios.push(usuario);
-const enviarFormulario = () => {
-    const nombre = nombreUsuario.value;
-    const apellido = apellidoUsuario.value;
-    const mail = mailUsuario.value;
-    const clave = claveUsuario.value;
-    const mode = agregarUsuario.dataset.mode;
+//   const admin = {
+//     id: "000",
+//     nombre: "Coco",
+//     apellido: "admin",
+//     mail: "admin@coco.com",
+//     clave: "AdminCoco",
+//     mode: "add"
+//   };
+//   usuarios.push(usuario);
+  const enviarFormulario = () => {
+    const nombre = inputNombre.value;
+    const apellido = inputApellido.value;
+    const mail = inputEmail.value;
+    const clave = inputContrasena.value;
+    const mode = form.dataset.mode;
   
     if (mode === "add" && nombre !== "" && apellido !== "" && mail !== "" && clave !== "") {
       const id = uuidv4();
-      const usuario = { id, nombre, apellido, mail, clave};
+      const usuario = { id, nombre, apellido, mail, clave };
       usuarios.push(usuario);
     } else if (mode === "delete") {
-      const id = agregarUsuario.dataset.id;
+      const id = form.dataset.id;
       const index = usuarios.findIndex((usuario) => usuario.id === id);
       if (index !== -1) {
         usuarios.splice(index, 1);
       }
     }
   
-    agregarUsuario.reset();
-    agregarUsuario.dataset.mode = "add";
+    form.reset();
+    form.dataset.mode = "add";
     mostrarUsuarios();
-};
+    guardarUsuariosEnLocalStorage();
+  };
   
-
+  const guardarUsuariosEnLocalStorage = () => {
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+  };
+  
 crearUsuario.addEventListener('click', enviarFormulario);
 console.log("Usuario creado")
 listaUsuarios.addEventListener("click", (e) => {
@@ -147,4 +143,4 @@ const usuariosLocalStorage = JSON.parse(localStorage.getItem("usuarios"));
 if (usuariosLocalStorage) {
   usuarios = usuariosLocalStorage;
   mostrarUsuarios();
-};
+}

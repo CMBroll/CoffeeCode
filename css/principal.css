@@ -243,7 +243,12 @@ button.navbarBtn .navbar-toggler-icon {
     border: 2px solid var(--marronClaro);
     background-color: transparent;
 }
-
+.formItem input.valido{
+    border: 2px solid rgb(31, 79, 31);
+}
+.formItem input.invalido{
+    border: 2px solid rgb(110, 43, 43);
+}
 .formItem label {
     position: absolute;
     cursor: text;

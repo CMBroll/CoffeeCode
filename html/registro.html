@@ -38,21 +38,21 @@
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" id="nombre" name="nombre" class="form-control"
-                            placeholder="Ingrese su nombre" required>
+                            placeholder="Ingrese su nombre" minlength="3" maxlength="30" required>
                     </div>
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" id="apellido" name="apellido" class="form-control inputStyle"
-                            placeholder="Ingrese su apellido" required>
+                            placeholder="Ingrese su apellido" minlength="3" maxlength="30" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su email" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su email" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
                     </div>
                     <div class="mb-3">
                         <label for="contrasena" class="form-label">Contraseña</label>
                         <input type="password" id="contrasena" name="contrasena" class="form-control"
-                            placeholder="Ingrese su contraseña">
+                            placeholder="Ingrese su contraseña" minlength="8" maxlength="20">
                     </div>
                     <hr>
                     <button type="submit" class="btn btn-primary" id="crear-usuario">ENVIAR</button>

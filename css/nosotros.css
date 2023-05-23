@@ -22,9 +22,10 @@ h1 {
     color: #eddcc6;
 }
 
-p {
+.frase p {
     color: #eddcc6;
     font-size: 20px;
+    text-align: justify;
 }
 
 main img {

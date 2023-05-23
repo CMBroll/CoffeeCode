@@ -9,9 +9,9 @@ const listaUsuarios = document.getElementById('listaUsuarios');
 const inputs = document.querySelectorAll('#formRegistro input');
 
 const expresiones = {
-    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-    nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
-    password: /^.{8,12}$/, // 4 a 12 digitos.
+    usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, 
+    nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, 
+    password: /^.{8,12}$/,
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 };
 

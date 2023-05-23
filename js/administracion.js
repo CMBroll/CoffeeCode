@@ -218,18 +218,16 @@ listaProductos.addEventListener("click", (e) => {
 });
 
 const obtenerUsuarios = JSON.parse(localStorage.getItem("usuarios"))
-
-
 const tablaUsuarios = document.getElementById("tablaUsuarios")
 
 obtenerUsuarios.forEach((usuario) => {
   const fila = `
-  <tr id="fila-${usuario.email}">
+  <tr id="fila-${usuario.mail}">
     <th scope="row">${usuario.nombre}</th>
-    <td>${usuario.email}</td>
-    <td>${usuario.contraseña}</td>
+    <td>${usuario.mail}</td>
+    <td>${usuario.clave}</td>
     <td>
-      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.email}">Borrar</button>
+      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mail}">Borrar</button>
     </td>
   </tr>
   `;
@@ -238,14 +236,14 @@ obtenerUsuarios.forEach((usuario) => {
 });
 
   
-  tablaUsuarios.addEventListener("click", (e) => {
-  if(e.target.classList.contains("eliminarusuario")){
-    const correo = e.target.dataset.correo
-    const usuario = obtenerUsuarios.find((usuario) => usuario.email === correo)
-    
+tablaUsuarios.addEventListener("click", (e) => {
+  if (e.target.classList.contains("eliminarusuario")) {
+    const correo = e.target.dataset.correo;
+    const usuario = obtenerUsuarios.find((usuario) => usuario.mail === correo);
+
     swal({
-      title: "Está seguro de que desea borrar este usuario?",
-      text: "Una vez borrado no puede recuperarlo",
+      title: "¿Está seguro de que desea borrar este usuario?",
+      text: "Una vez borrado no se puede recuperar",
       icon: "warning",
       buttons: true,
       dangerMode: true,
@@ -254,18 +252,17 @@ obtenerUsuarios.forEach((usuario) => {
         const indexusuarios = obtenerUsuarios.indexOf(usuario);
         if (indexusuarios > -1) {
           obtenerUsuarios.splice(indexusuarios, 1);
+          localStorage.setItem("usuarios", JSON.stringify(obtenerUsuarios));
         }
-        localStorage.setItem("usuarios", JSON.stringify(obtenerUsuarios));
-        const fila = document.getElementById(`fila-${correo}`)
-        fila.remove()
+        const fila = document.getElementById(`fila-${correo}`);
+        fila.remove();
         swal("El usuario fue eliminado exitosamente", {
           icon: "success",
         });
       } else {
-        swal("El producto no fue eliminado");
+        swal("El usuario no fue eliminado");
       }
     });
-  
   }
-  })
+});
 

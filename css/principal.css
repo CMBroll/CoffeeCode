@@ -1,4 +1,4 @@
-/* Estilos Generales*/ 
+/* Estilos Generales*/
 :root {
     --marronClaro: #eddcc6;
     --marronNavbar: #33241b;
@@ -7,8 +7,9 @@
     --verdeMoho: #1e2d2c;
     --marronBoton: #341f14;
 }
+
 /* COMIENZO NAVBAR */
-header .topBanner{
+header .topBanner {
     height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
@@ -19,11 +20,13 @@ header .topBanner{
     padding-top: 1rem;
     margin: 0;
 }
-.imgLogo{
+
+.imgLogo {
     width: 12rem;
     height: 5rem;
 }
-.navbar.navbar-expand-lg{
+
+.navbar.navbar-expand-lg {
     padding: 0 auto;
     margin: 0;
     background-color: #33241b;
@@ -31,7 +34,8 @@ header .topBanner{
     flex-wrap: wrap;
     justify-content: center;
 }
-.navbar-nav a{
+
+.navbar-nav a {
     font-size: 1rem;
     font-family: 'Unna', serif;
     color: var(--marronClaro);
@@ -39,25 +43,29 @@ header .topBanner{
     text-align: center;
     gap: 50px;
 }
-.navbar-nav a:hover{
+
+.navbar-nav a:hover {
     color: var(--marronClaro);
-    background-color:var(--verdeMoho);
+    background-color: var(--verdeMoho);
     border-radius: 25px;
     transition: 0.5s;
 }
-button.navbarBtn .navbar-toggler-icon{
+
+button.navbarBtn .navbar-toggler-icon {
     background-color: var(--marronNavbar);
     background-image: url(../src/img/CirculoCoco.svg);
     width: 2rem;
 }
-.offcanvas{
+
+.offcanvas {
     background-color: var(--marronNavbar);
     font-size: 1.5rem;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-@media (max-width: 992px){
-    .navbar-right li .btn i::after{
+
+@media (max-width: 992px) {
+    .navbar-right li .btn i::after {
         content: 'Login';
         padding-left: 1rem;
         font-family: 'Unna', serif;
@@ -65,10 +73,12 @@ button.navbarBtn .navbar-toggler-icon{
         font-weight: 400;
         color: #9d745e;
     }
-    .navbar-right li .btn .fa-user::after{
+
+    .navbar-right li .btn .fa-user::after {
         content: 'Login';
     }
-    .navbar-right li .btn .fa-cart-shopping::after{
+
+    .navbar-right li .btn .fa-cart-shopping::after {
         content: 'Carrito';
     }
 }
@@ -120,6 +130,7 @@ button.navbarBtn .navbar-toggler-icon{
     border-radius: 25px;
     transition: 0.5s;
 }
+
 button.navbarBtn .navbar-toggler-icon {
     background-color: var(--marronNavbar);
     background-image: url(../src/img/LieasOlas.svg);
@@ -298,6 +309,7 @@ a.registrarse {
         justify-content: space-between;
 
     }
+
     .modal .btnIngresar {
         width: 20rem;
     }
@@ -361,7 +373,7 @@ a.registrarse {
 .offcanvasBg {
     background-image: url(../src/img/CirculoCoco.svg);
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
     width: 30rem !important;
 }
 
@@ -401,7 +413,7 @@ a.registrarse {
 }
 
 .btn-close {
-    color:#eddcc6  ;
+    color: #eddcc6;
 }
 
 .contenidoCarrito {
@@ -414,13 +426,13 @@ a.registrarse {
     background-color: #33241b;
     margin-bottom: 1.8rem;
     width: 100%;
-    border-radius: 1rem;    
+    border-radius: 1rem;
     padding: 1rem;
 }
 
 .infoCarrito {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .infoCarrito h2 {
@@ -430,7 +442,7 @@ flex-wrap: wrap;
 
 .infoCarrito p {
     width: 100%;
-    
+
 }
 
 .productoCarrito img {
@@ -448,7 +460,7 @@ flex-wrap: wrap;
 
 .restar {
     cursor: pointer;
-    margin:0rem 1rem 1rem 1rem;
+    margin: 0rem 1rem 1rem 1rem;
     background-color: black;
     width: 3rem;
     display: flex;
@@ -462,7 +474,7 @@ flex-wrap: wrap;
 
 .sumar {
     cursor: pointer;
-    margin:0rem 2rem 1rem 1rem;
+    margin: 0rem 2rem 1rem 1rem;
     background-color: black;
     width: 3rem;
     display: flex;
@@ -474,21 +486,21 @@ flex-wrap: wrap;
 .totalContent {
     position: relative;
     bottom: 0;
-   background-color: #19110d;
+    background-color: #19110d;
     width: 50rem;
     height: 10%;
     padding: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: start;
-   
+
 
 }
 
-@media (max-width:420px){
+@media (max-width:420px) {
     .totalContent {
-    font-size: 1.5rem;
-    width: 34rem;
+        font-size: 1.5rem;
+        width: 34rem;
     }
 
 }
@@ -517,7 +529,7 @@ flex-wrap: wrap;
     transition: .3s;
 }
 
-.capsulasBg:hover{
+.capsulasBg:hover {
     background-color: rgba(237, 220, 198, 1);
     color: var(--marronOscuro);
 }
@@ -544,7 +556,7 @@ flex-wrap: wrap;
     object-fit: contain;
     width: 8rem;
     height: 11rem;
-    background-color:#33241b;
+    background-color: #33241b;
     padding: .6rem;
 }
 
@@ -557,18 +569,18 @@ flex-wrap: wrap;
 }
 
 
-.addNumber_cont{
+.addNumber_cont {
     display: flex;
     align-items: center;
 }
 
-.addNumber_cont button{
+.addNumber_cont button {
     width: 3.5rem;
     height: 3rem;
 
     border: none;
     border-radius: 1px;
-    
+
     color: #eddcc6;
     background-color: #1e2d2c;
 
@@ -576,17 +588,18 @@ flex-wrap: wrap;
     font-weight: bold;
 
     cursor: pointer;
- 
+
 }
-.addNumber_cont button:hover{
+
+.addNumber_cont button:hover {
     background-color: #33241b;
 }
 
-.value_cont{
+.value_cont {
     width: 3rem;
     height: 3rem;
-    
-    
+
+
     border-radius: 1px;
 
     color: #eddcc6;
@@ -627,7 +640,7 @@ flex-wrap: wrap;
 @media (max-width:576px) {
     .pagoTexto {
         padding: 0;
-    padding-right: 11rem;
+        padding-right: 11rem;
     }
 }
 
@@ -637,14 +650,14 @@ flex-wrap: wrap;
     height: 6rem;
     width: 15rem;
     border: none;
-    color:#eddcc6;
+    color: #eddcc6;
 }
 
 
 
 @media (max-width:576px) {
     .headCarrito {
-    display: none;
+        display: none;
     }
 }
 
@@ -875,6 +888,7 @@ a.registrarse {
         justify-content: space-between;
 
     }
+
     .modal .btnIngresar {
         width: 20rem;
     }
@@ -898,7 +912,7 @@ a.registrarse {
         padding: 0;
     }
 
-    .navbar-right{
+    .navbar-right {
         position: absolute;
         right: 7%;
     }
@@ -940,11 +954,12 @@ a.registrarse {
         width: 90vw;
     }
 }
+
 /* FINAL DEL NAVBAR */
 
 
 
-/* COMIENZO CONTENIDO */  
+/* COMIENZO CONTENIDO */
 body {
     background-color: var(--marronOscuro);
 }
@@ -1004,7 +1019,7 @@ hr {
     transition: 1s;
 }
 
-.capsulasBg:hover{
+.capsulasBg:hover {
     background-color: rgba(237, 220, 198, 1);
     color: var(--marronOscuro);
 }
@@ -1061,65 +1076,70 @@ hr {
 footer {
     font-family: 'Montserrat', sans-serif, 'Unna', serif;
     background-color: #32241b;
-  }
-  
-  
-  .bordes {
-  border-left: 1px solid #eddcc6;
-  border-right: 1px solid #eddcc6;
-  }
-  
-  
-  .logoFooter {
-    max-width: 95%;
-  }
-  
-  @media (min-width: 992px) {
-    .logoFooter {
-      max-width: 55%;
-    }
-  }
-  
+}
 
-  footer p {
+
+.bordes {
+    border-left: 1px solid #eddcc6;
+    border-right: 1px solid #eddcc6;
+}
+
+
+.logoFooter {
+    max-width: 95%;
+}
+
+@media (min-width: 992px) {
+    .logoFooter {
+        max-width: 55%;
+    }
+}
+
+
+footer p {
     margin: 0;
     margin-left: 10px;
-  }
-  
-  .enlacesFooter{
+}
+
+.enlacesFooter {
     color: #eddcc6;
     text-decoration: none;
-  }
-  
-  .enlacesFooter:hover{
+}
+
+.enlacesFooter:hover {
     cursor: pointer;
     text-decoration: underline;
-  }
+}
 
-  
-  .borderTopFooter{
+.catalogoFooter {
+    margin-top: 5%;
+}
+
+.borderTopFooter {
     width: 100%;
     height: 0px;
     background: black;
-  }
-  
-  .giro360{
-    transform: rotate(0deg);
-    animation: rotate 5s linear infinite; 
-  }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  @media (min-width: 768px) and (max-width: 979px) {
-    .container .footerWrap{
+.giro360 {
+    transform: rotate(0deg);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .container .footerWrap {
         padding: 0;
     }
-  }
+}
+
 /* FINAL DEL FOOTER */

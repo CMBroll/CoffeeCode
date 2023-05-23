@@ -153,7 +153,7 @@ btnCerrar.addEventListener('click', function() {
 const usuarioActivo = JSON.parse(localStorage.getItem('usuarioActual'));
 const adminLink = document.getElementById('admin-link');
 
-if (usuarioActivo && usuarioActivo.nombre === 'Admin') {
+if (usuarioActivo && usuarioActivo.nombre === 'Coco') {
   adminLink.style.display = 'block';
 } else {
   adminLink.style.display = 'none';

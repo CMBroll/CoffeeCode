@@ -26,7 +26,7 @@ h2 {
     color: rgb(237, 221, 198);
 }
 
-.form-control {
+.form-control-contacto {
     background-color: rgb(50, 36, 27);
     color: rgb(237, 221, 198);
     border-radius: 40px;
@@ -36,12 +36,12 @@ h2 {
     margin: 20px 0px;
 }
 
-.form-control:focus {
+.form-control-contacto:focus {
     background-color: rgb(237, 221, 198);
     transition: 0.5s;
 }
 
-.form-control:focus::placeholder {
+.form-control-contacto:focus::placeholder {
     color: #281c16 !important;
     transition: 0.5s;
 }

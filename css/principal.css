@@ -107,6 +107,7 @@ button.navbarBtn .navbar-toggler-icon{
 .navbar-nav a {
     font-size: 1rem;
     font-family: 'Unna', serif;
+    font-style: italic;
     color: var(--marronClaro);
     text-decoration: none;
     text-align: center;

@@ -24,7 +24,7 @@ import { arraynumeros, generadorId } from "./numerorandom.js";
           swal({
             title: "Producto Cargado",
             text: "Su producto fue cargado exitosamente",
-            icon: "success",
+            icon: "/src/img/CorrectoCafe.png",
             button: "ok",
           });
           generadorId();
@@ -210,7 +210,7 @@ listaProductos.addEventListener("click", (e) => {
         const elemento = document.getElementById(id);
         elemento.parentNode.removeChild(elemento);
         swal("El producto fue eliminado exitosamente", {
-          icon: "success",
+          icon: "/src/img/CorrectoCafe.png",
         });
       } else {
         swal("El producto no fue eliminado");
@@ -259,7 +259,7 @@ tablaUsuarios.addEventListener("click", (e) => {
         const fila = document.getElementById(`fila-${correo}`);
         fila.remove();
         swal("El usuario fue eliminado exitosamente", {
-          icon: "success",
+          icon: "/src/img/CorrectoCafe.png",
         });
       } else {
         swal("El usuario no fue eliminado");

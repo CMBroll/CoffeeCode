@@ -1,36 +1,47 @@
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+    --bordoBoton: #6d0000;
+    --marronSemiC: #4e372b;
+}
+
 body {
-    background-color: #160c0a;
+    background-color: var(--marronOscuro);
     font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    color: #eddcc6;
+    color: var(--marronClaro);
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
 
 h4 {
-    color: #eddcc6;
+    color: var(--marronClaro);
     font-size: 17px;
     font-weight: bold;
 }
 
 hr {
-    color: #eddcc6;
+    color: var(--marronClaro);
 }
 
 thead {
-    color: #eddcc6;
+    color: var(--marronClaro);
     font-weight: bold;
 }
 
 tbody {
-    color: #281c16;
-    background-color: #eddcc6;
+    color: var(--marronOscuro);
+    background-color: var(--marronClaro);
 }
 
 .editar {
-    background-color: #281c16;
+    background-color: var(--marronBoton);
     width: 50px;
     height: 50px;
     background-image: url(/src/img/editar.svg);
@@ -40,7 +51,7 @@ tbody {
 }
 
 .eliminar {
-    background-color: #6d0000;
+    background-color: var(--bordoBoton);
     width: 50px;
     height: 50px;
     background-image: url(/src/img/eliminarRed.svg);
@@ -50,7 +61,7 @@ tbody {
 }
 
 .eliminarusuario {
-    background-color: #6d0000;
+    background-color: var(--bordoBoton);
     width: 50px;
     height: 50px;
     background-image: url(/src/img/eliminarRed.svg);
@@ -69,19 +80,19 @@ tbody {
 
 .navBackground a {
     background-color: transparent;
-    color: #eddcc6;
+    color: var(--marronClaro);
     transition: 0.5s;
     text-align: center;
 }
 
 .navBackground a:hover {
-    background-color: #eddcc6;
+    background-color: var(--marronClaro);
     color: #281c16;
     border-radius: 999px;
 }
 
 .borderColor {
-    border-color: #eddcc6;
+    border-color: var(--marronClaro);
 }
 
 .olas {
@@ -89,8 +100,8 @@ tbody {
 }
 
 .btnAgregar {
-    background-color: #eddcc6;
-    color: #281c16;
+    background-color: var(--marronClaro);
+    color: var(--marronOscuro);
     min-width: 150px; /* Tamaño mínimo del botón */
     max-width: 370px; /* Tamaño máximo del botón */
     font-size: 25px;
@@ -101,24 +112,24 @@ tbody {
 }
 
 .btnAgregar:hover {
-    background-color: #4e372b;
-    color: #eddcc6;
+    background-color: var(--marronSemiC);
+    color: var(--marronClaro);
 }
 
 .btnAgregar:active {
-    background-color: #4e372b !important;
-    color: #eddcc6 !important;
+    background-color: var(--marronSemiC) !important;
+    color: var(--marronClaro) !important;
 }
 
 .subtitulo h3 {
-    color: #eddcc6;
+    color: var(--marronClaro);
     font-weight: 400;
 }
 
 .table tbody tr {
     height: 60px;
     /* Establece la altura deseada */
-    border-color: #281c16;
+    border-color: var(--marronOscuro);
     vertical-align: middle;
 }
 
@@ -128,7 +139,7 @@ tbody {
 }
 
 .botonCont {
-    background-color: #281c16;
+    background-color: var(--marronOscuro);
     width: 50px;
     height: 50px;
     padding: 13px;
@@ -149,7 +160,7 @@ tbody {
 
 /* ESTILO MODAL */
 .modal-content {
-    background-color: #281c16;
+    background-color: var(--marronOscuro);
     color: #eddcc6;
     border-radius: 2rem;
     padding: 1rem;
@@ -163,14 +174,14 @@ tbody {
 
 .modal-content input,
 .modal-content select {
-    background-color: #eddcc6;
+    background-color: var(--marronClaro);
     height: 3.2rem;
     border-radius: 999px;
 }
 
 .modal-content button {
-    background-color: #eddcc6;
-    border: solid 2px #eddcc6;
+    background-color: var(--marronClaro);
+    border: solid 2px var(--marronClaro);
     color: #281c16;
     font-weight: bolder;
     padding: 1rem;
@@ -178,13 +189,13 @@ tbody {
 
 .btnCerrarGuardar button {
     background-color: transparent;
-    border-color: #eddcc6;
-    color: #eddcc6;
+    border-color: var(--marronClaro);
+    color: var(--marronClaro);
     transition: 0.5s;
 }
 
 .btnCerrarGuardar button:hover {
-    background-color: #101c1b;
-    border-color: #eddcc6;
-    color: #eddcc6;
+    background-color: var(--marronNavbar);
+    border-color: var(--marronClaro);
+    color: var(--marronClaro);
 }

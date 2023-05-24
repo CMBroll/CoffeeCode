@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+.form-control:focus {
+  background-color: #5a4131;
+}
+
 ::selection {
   background: #281c16;
   color: #eddcc6;

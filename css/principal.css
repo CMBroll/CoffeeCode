@@ -6,6 +6,7 @@
     --degradado: linear-gradient(to bottom, #33241b, #160d0b);
     --verdeMoho: #1e2d2c;
     --marronBoton: #341f14;
+    --aModal: #7b543f;
 }
 
 ::selection {
@@ -34,7 +35,7 @@ header .topBanner {
 .navbar.navbar-expand-lg {
     padding: 0 auto;
     margin: 0;
-    background-color: #33241b;
+    background-color: var(--marronNavbar);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,7 +90,7 @@ button.navbarBtn .navbar-toggler-icon {
 }
 
 .headerContainer {
-    background-color: #33241b;
+    background-color: var(--marronNavbar);
     justify-content: center;
 }
 
@@ -113,7 +114,7 @@ button.navbarBtn .navbar-toggler-icon {
 .navbar.navbar-expand-lg {
     padding: 0 auto;
     margin: 0;
-    background-color: #33241b;
+    background-color: var(--marronNavbar);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -216,7 +217,7 @@ button.navbarBtn .navbar-toggler-icon {
 }
 
 .modal-body a.linkContra:hover {
-    color: #7b543f;
+    color: var(--aModal);
 }
 
 
@@ -402,7 +403,7 @@ a.registrarse {
 }
 
 .colorTexto {
-    color: #eaddcd;
+    color: var(--marronClaro);
 }
 
 
@@ -423,7 +424,7 @@ a.registrarse {
 }
 
 .btn-close {
-    color: #eddcc6;
+    color: var(--marronClaro);
 }
 
 .contenidoCarrito {
@@ -612,7 +613,7 @@ a.registrarse {
 
     border-radius: 1px;
 
-    color: #eddcc6;
+    color: var(--marronClaro);
     background-color: #33241b;
 
     display: flex;
@@ -627,7 +628,7 @@ a.registrarse {
 
 .botonEliminar {
     background-color: #19110d;
-    color: #eddcc6;
+    color: var(--marronClaro);
     border: none;
     padding: 1rem;
     border-radius: 10%;
@@ -660,7 +661,7 @@ a.registrarse {
     height: 6rem;
     width: 15rem;
     border: none;
-    color: #eddcc6;
+    color: var(--marronClaro);
 }
 
 
@@ -875,7 +876,7 @@ a.registrarse {
     border-radius: 10px;
     padding: 1% 5%;
     margin: 0 3% 2%;
-    color: #e6edf3;
+    color: var(--marronClaro);
 }
 
 @media (max-width: 992px) {
@@ -1090,8 +1091,8 @@ footer {
 
 
 .bordes {
-    border-left: 1px solid #eddcc6;
-    border-right: 1px solid #eddcc6;
+    border-left: 1px solid var(--marronClaro);
+    border-right: 1px solid var(--marronClaro);
 }
 
 
@@ -1112,7 +1113,7 @@ footer p {
 }
 
 .enlacesFooter {
-    color: #eddcc6;
+    color: var(--marronClaro);
     text-decoration: none;
 }
 

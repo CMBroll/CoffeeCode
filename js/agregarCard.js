@@ -4,7 +4,7 @@ const cartas = document.getElementById("cartas");
 
 JSON.parse(obtenerproductos).forEach((producto) => {
   const carta = `
-    <div class=" product-item" id="granos" style="width: 25rem;">
+    <div class=" product-item" id="${producto.categoria}" style="width: 25rem;">
     <div class="box d-flex flex-column justify-content-between align-items-center p-3">
     <h3>${producto.nombre}</h3>
     <div class="d-flex imgAdapt">

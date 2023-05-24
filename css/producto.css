@@ -8,6 +8,11 @@
     --marronBoton: #341f14;
 }
 
+::selection {
+    background: var(--marronClaro);
+    color: var(--marronNavbar)
+}
+
 /* COMIENZO NAVBAR */
 
 .headerContainer {

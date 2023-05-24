@@ -2,9 +2,7 @@ body {
     background-color: #160c0a;
     font-family: "Montserrat", sans-serif;
 }
-main {
-    padding: 10%;
-}
+
 h1 {
     color: #eddcc6;
     font-family: "Montserrat", sans-serif;
@@ -29,6 +27,36 @@ thead {
 tbody {
     color: #281c16;
     background-color: #eddcc6;
+}
+
+.editar {
+    background-color: #281c16;
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/editar.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eliminar {
+    background-color: #6d0000;
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/eliminarRed.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eliminarusuario {
+    background-color: #6d0000;
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/eliminarRed.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container {
@@ -63,9 +91,10 @@ tbody {
 .btnAgregar {
     background-color: #eddcc6;
     color: #281c16;
+    min-width: 150px; /* Tamaño mínimo del botón */
+    max-width: 370px; /* Tamaño máximo del botón */
     font-size: 25px;
     font-weight: 500;
-    padding: 2.5rem 7rem 2.5rem 7rem;
     border-radius: 999px;
     border: none;
     transition: 1s;

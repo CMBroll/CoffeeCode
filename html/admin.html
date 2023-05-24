@@ -43,18 +43,16 @@
 </header>
 
 <body>
-      <main>
+      <main class="p-1">
         <article>
 
-            <h1 class="d-flex justify-content-center mt-5 mb-5">ADMINISTRACION</h1>
-
-            <div class="button-agregar">
                 <section>
-                 
-                        <div class="d-flex justify-content-center mt-4">
-                            <button type="button" class="button-color btn btnAgregar btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modal">Agregar Producto</button>
-                        </div>
+                
+                    <h1 class="d-flex justify-content-center mt-5 mb-5">ADMINISTRACION</h1>
+                    <div class="container d-flex justify-content-center">
+                    <button type="button" class="btn btnAgregar btn-sm w-100 py-4 mb-5" data-bs-toggle="modal"
+                        data-bs-target="#modal">Agregar Producto</button>
+                    </div>
 
                     <!--Inicio modal con Formulario-->
                     <div id="modal" class="modal" tabindex="-1">
@@ -147,7 +145,6 @@
                     </div>
                     <!--Fin modal con Formulario-->
                 </section>
-            </div>
         </article>
         <div class="container">
             <div class="subtitulo">
@@ -157,7 +154,7 @@
         <article>
             <section>
                 <!--Inicio Tabla de Productos-->
-          
+                <div class="table-responsive">
                     <table class="table" id="listadeproductos">
                         <thead>
                             <tr>
@@ -174,6 +171,7 @@
                         <tbody></tbody>
                     </table>
                 </div>
+                </div>
                 <!--Fin Tabla de Productos-->
             </section>
             <div class="container">
@@ -184,6 +182,7 @@
             <section>
                 
                 <!--Inicio Tabla de Usuarios-->
+                <div class="table-responsive">
                     <table class="table" id="listaDeUsuarios">
                         <thead>
                             <tr>
@@ -195,6 +194,7 @@
                         </thead>
                         <tbody id="tablaUsuarios"></tbody>
                     </table>
+                </div>
                 </div>
                 <!--Fin Tabla de Usuarios-->
             </section>

@@ -146,10 +146,12 @@ function agregarproducto() {
     <td></td>
     <td>
     <div class="col-md">
+    <div class="d-inline">
     <button class="btn btn-outline-secondary editar" data-codigo="${producto.codigo}" data-bs-toggle="modal"
-    data-bs-target="#modal">Editar</button>
+    data-bs-target="#modal"></button>
     </div>
-    <button class="btn btn-outline-secondary eliminar mt-2" data-codigo="${producto.codigo}" class="btn btn-outline-secondary">Eliminar</button>
+    <button class="btn btn-outline-secondary eliminar my-1" data-codigo="${producto.codigo}" class="btn btn-outline-secondary"></button>
+    </div>
     </td>
     `;
     listaProductos.querySelector("tbody").appendChild(tr);
@@ -227,7 +229,7 @@ obtenerUsuarios.forEach((usuario) => {
     <td>${usuario.mail}</td>
     <td>${usuario.clave}</td>
     <td>
-      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mail}">Borrar</button>
+      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mail}"></button>
     </td>
   </tr>
   `;

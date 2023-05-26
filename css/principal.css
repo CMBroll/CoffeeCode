@@ -13,7 +13,9 @@
     background: var(--marronClaro);
     color: var(--marronNavbar)
 }
-
+.hidden {
+    display: none;
+  }
 /* COMIENZO NAVBAR */
 header .topBanner {
     height: 2.5rem;

@@ -28,12 +28,13 @@ form.addEventListener('submit', function(e) {
     if (admin && clave === "AdminCoco"){
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       form.reset();
+      window.location.href = 'index.html';
     } else if (usuario && usuario.clave === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
       iconLogin.classList.remove('fa-user');
       iconLogin.classList.add('fa-right-from-bracket');
-      
+      window.location.href = 'index.html';
     } else {
     // Credenciales inválidas
     usuarioInvalido.style.display = "block";
@@ -74,10 +75,11 @@ if (usuarioActivo !== null && usuarioActivo !== undefined) {
   console.log("No hay ningún usuario actual.");
 }
 
-const adminLink = document.getElementById('admin-link');
-const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
-if (cuentaActiva && cuentaActiva.nombre === 'Coco') {
-  adminLink.style.display = 'block';
-} else {
-  adminLink.style.display = 'none';
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const adminLink = document.getElementById('admin-link');
+  const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
+
+  if (cuentaActiva && cuentaActiva.nombre === 'Coco') {
+    adminLink.classList.remove('hidden');
+  }
+});

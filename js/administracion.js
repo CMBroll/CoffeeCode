@@ -195,7 +195,7 @@ listaProductos.addEventListener("click", (e) => {
     const producto = productos.find((producto) => producto.codigo === id);
 
     swal({
-      title: "Está seguro de que desea borrar este producto?",
+      title: "¿Está seguro de que desea borrar el producto: " + producto.nombre + "?",
       text: "Una vez borrado no puede recuperarlo",
       icon: "warning",
       buttons: true,
@@ -244,7 +244,7 @@ tablaUsuarios.addEventListener("click", (e) => {
     const usuario = obtenerUsuarios.find((usuario) => usuario.mail === correo);
 
     swal({
-      title: "¿Está seguro de que desea borrar este usuario?",
+      title: "¿Está seguro de que desea borrar el usuario: " + usuario.nombre + "?",
       text: "Una vez borrado no se puede recuperar",
       icon: "warning",
       buttons: true,

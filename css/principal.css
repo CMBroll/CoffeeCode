@@ -236,6 +236,7 @@ div.formItem i#icon-contrasenia {
     position: absolute;
     right: 20px;
     top: 20px;
+    cursor: pointer;
 }
 
 .formItem input {

@@ -29,13 +29,35 @@ form.addEventListener('submit', function(e) {
     if (admin && clave === "AdminCoco"){
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       form.reset();
-      window.location.href = '../index.html';
+      Swal.fire({
+        title: 'Ingresaste como administrador',
+        icon: 'success',
+        heightAuto: 'false',
+        background: '#33241b',
+        color: '#eddcc6',
+        confirmButtonColor: '#281c16',
+      }
+        ).then((result) => {
+          window.location.href = '../index.html';
+          
+      });
     } else if (usuario && usuario.claveUsu === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
       iconLogin.classList.remove('fa-user');
       iconLogin.classList.add('fa-right-from-bracket');
-      window.location.href = '../index.html';
+      Swal.fire({
+        title: 'Inicio de sesión exitoso!',
+        text: 'Bienvenid@ '+ usuario.nombreApellido +'!',
+        icon: 'success',
+        heightAuto: 'false',
+        background: '#33241b',
+        color: '#eddcc6',
+        confirmButtonColor: '#281c16'}
+        ).then((result) => {
+          window.location.href = '../index.html';
+          
+      });
     } else {
     // Credenciales inválidas
     usuarioInvalido.style.display = "block";
@@ -82,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const adminLink = document.getElementById('admin-link');
   const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
 
-  if (cuentaActiva && cuentaActiva.username === 'admin') {
+  if (cuentaActiva && cuentaActiva.nombreApellido === 'admin') {
     adminLink.classList.remove('hidden');
   }
 });

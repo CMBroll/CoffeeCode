@@ -195,7 +195,7 @@ listaProductos.addEventListener("click", (e) => {
     const producto = productos.find((producto) => producto.codigo === id);
 
     swal({
-      title: "¿Está seguro de que desea borrar el producto: " + producto.nombre + "?",
+      title: "Está seguro de que desea borrar este producto?",
       text: "Una vez borrado no puede recuperarlo",
       icon: "warning",
       buttons: true,
@@ -224,12 +224,12 @@ const tablaUsuarios = document.getElementById("tablaUsuarios")
 
 obtenerUsuarios.forEach((usuario) => {
   const fila = `
-  <tr id="fila-${usuario.mail}">
-    <th scope="row">${usuario.nombre}</th>
-    <td>${usuario.mail}</td>
-    <td>${usuario.clave}</td>
+  <tr id="fila-${usuario.mailUsu}">
+    <th scope="row">${usuario.nombreApellido}</th>
+    <td>${usuario.mailUsu}</td>
+    <td>${usuario.claveUsu}</td>
     <td>
-      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mail}"></button>
+      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mailUsu}"></button>
     </td>
   </tr>
   `;
@@ -241,10 +241,10 @@ obtenerUsuarios.forEach((usuario) => {
 tablaUsuarios.addEventListener("click", (e) => {
   if (e.target.classList.contains("eliminarusuario")) {
     const correo = e.target.dataset.correo;
-    const usuario = obtenerUsuarios.find((usuario) => usuario.mail === correo);
+    const usuario = obtenerUsuarios.find((usuario) => usuario.mailUsu === correo);
 
     swal({
-      title: "¿Está seguro de que desea borrar el usuario: " + usuario.nombre + "?",
+      title: "¿Está seguro de que desea borrar este usuario?",
       text: "Una vez borrado no se puede recuperar",
       icon: "warning",
       buttons: true,

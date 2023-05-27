@@ -17,7 +17,7 @@
     display: none;
   }
 /* COMIENZO NAVBAR */
-header .topBanner {
+/* header .topBanner {
     height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
@@ -27,7 +27,7 @@ header .topBanner {
     background-color: var(--verdeMoho);
     padding-top: 1rem;
     margin: 0;
-}
+} */
 
 .imgLogo {
     width: 12rem;
@@ -104,7 +104,6 @@ button.navbarBtn .navbar-toggler-icon {
     text-align: center;
     color: var(--marronClaro);
     background-color: var(--verdeMoho);
-    padding-top: 1rem;
     margin: 0;
 }
 
@@ -686,18 +685,6 @@ a.registrarse {
 .headerContainer {
     background-color: #33241b;
     justify-content: center;
-}
-
-.topBanner {
-    height: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    color: var(--marronClaro);
-    background-color: var(--verdeMoho);
-    padding-top: 1rem;
-    margin: 0;
 }
 
 .imgLogo {

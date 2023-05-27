@@ -75,7 +75,7 @@ formRegistro.addEventListener('input', ()=>{
         !patternClave.test(valorClave)
       ) {
         claveUsu.setCustomValidity(
-          "La contraseña ingresada debe ser de 4 a 12 digitos e incluir un numero"
+          "La contraseña ingresada debe ser de 8 a 12 digitos e incluir un numero"
         );
       } else {
         claveUsu.setCustomValidity("");
@@ -98,7 +98,7 @@ formRegistro.addEventListener('submit', (e) => {
   const patternMail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
   const patternClave = /^.{8,12}$/;
   const id = uuidv4();
-  let usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail };
+  let usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail, claveUsu: valorClave};
 
 
   if (
@@ -112,9 +112,8 @@ formRegistro.addEventListener('submit', (e) => {
     patternClave.test(valorClave)
   ) {
     
-    usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail };
+    usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail, claveUsu: valorClave };
     usuarios.push(usuario);
-    // localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
     formRegistro.reset();
     confirmacionForm(); 

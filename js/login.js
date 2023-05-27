@@ -10,7 +10,7 @@ const iconLogin = document.getElementById("icon-login");
 
 mailInput.addEventListener('input', function() {
   const valor = mailInput.value.trim();
-  if (arrayUsuarios.some(usuario => usuario.mail === valor)) {
+  if (arrayUsuarios.some(usuario => usuario.mailUsu === valor)) {
     mailInput.classList.remove('invalido');
     mailInput.classList.add('valido');
   } else {
@@ -19,17 +19,18 @@ mailInput.addEventListener('input', function() {
   }
 });
 
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const mail = mailInput.value;
   const clave = claveInput.value;
-  const usuario = arrayUsuarios.find(usuario => usuario.mail === mail);
-  const admin = arrayUsuarios.find(usuario => usuario.mail.toLowerCase() === "admin@coco.com");
+  const usuario = arrayUsuarios.find(usuario => usuario.mailUsu === mail);
+  const admin = arrayUsuarios.find(usuario => usuario.mailUsu.toLowerCase() === "admin@coco.com");
     if (admin && clave === "AdminCoco"){
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       form.reset();
       window.location.href = 'index.html';
-    } else if (usuario && usuario.clave === clave) {
+    } else if (usuario && usuario.claveUsu === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
       iconLogin.classList.remove('fa-user');
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const adminLink = document.getElementById('admin-link');
   const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
 
-  if (cuentaActiva && cuentaActiva.nombre === 'Coco') {
+  if (cuentaActiva && cuentaActiva.username === 'admin') {
     adminLink.classList.remove('hidden');
   }
 });

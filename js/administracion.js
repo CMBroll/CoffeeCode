@@ -244,7 +244,7 @@ tablaUsuarios.addEventListener("click", (e) => {
     const usuario = obtenerUsuarios.find((usuario) => usuario.mailUsu === correo);
 
     swal({
-      title: "¿Está seguro de que desea borrar este usuario?",
+      title: `¿Está seguro de que desea borrar el usuario ${usuario.nombreApellido}?`,
       text: "Una vez borrado no se puede recuperar",
       icon: "warning",
       buttons: true,
@@ -258,7 +258,7 @@ tablaUsuarios.addEventListener("click", (e) => {
         }
         const fila = document.getElementById(`fila-${correo}`);
         fila.remove();
-        swal("El usuario fue eliminado exitosamente", {
+        swal(`El usuario ${usuario.nombreApellido} fue eliminado exitosamente`, {
           icon: "/src/img/CorrectoCafe.png",
         });
       } else {

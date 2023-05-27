@@ -15,7 +15,7 @@ JSON.parse(obtenerproductos).forEach((producto) => {
         <span class="font-weight-bold">$ ${producto.precio}</span>
     </div>
     <div class="d-flex flex-column anchoContenedorBoton">
-        <button class="botonCarrito" id="botonAgregar">Agregar al carrito</button>
+        <button class="botonCarrito botonAgregar" id="botonAgregar" data-id="${producto.codigo}" data-filter="${producto.categoria}">Agregar al carrito</button>
         <button class="botonCarrito">Mas información</button>
     </div>
     </div>

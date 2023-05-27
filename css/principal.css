@@ -232,6 +232,12 @@ button.navbarBtn .navbar-toggler-icon {
     margin-bottom: 15px
 }
 
+div.formItem i#icon-contrasenia {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .formItem input {
     display: block;
     width: 20rem;

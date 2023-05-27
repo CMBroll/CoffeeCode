@@ -1,5 +1,11 @@
 import { arraynumeros, generadorId } from "./numerorandom.js";
 
+function logout() {
+  localStorage.removeItem('usuarioActual');
+  window.location.href = '../index.html';
+}
+const btnLogin = document.getElementById('btn-login');
+btnLogin.addEventListener('click', logout);
 //Inicio script de bootstrap para validar el formulario
 (() => {
   "use strict";

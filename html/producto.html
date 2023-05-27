@@ -57,15 +57,15 @@
             </div>
         </nav>
         <div class="botonesContainer">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+            <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
             </button>
             <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
                 <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
             </button>
 
-            <div class="offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
+            <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
@@ -94,9 +94,10 @@
                                     <h3>Iniciar Sesión</h3>
                                     <div class="formItem mt-4">
                                         <input type="email" name="email"
-                                            class="form-control form-control-login focus-ring inputWrap" id="mail-login"
-                                            pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
-                                        <label for="mail-login">
+                                            class="form-control form-control-login focus-ring inputWrap"
+                                            id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50"
+                                            required>
+                                        <label for="mail-login" class="labelInput correo">
                                             Correo Electrónico
                                         </label>
                                     </div>
@@ -104,17 +105,19 @@
                                         <input type="password"
                                             class="form-control form-control-login focus-ring contraseniaInput inputWrap"
                                             id="contrasenia-login" minlength="8" maxlength="20" required>
-                                        <label for="contrasenia-login">
+                                        <label for="contrasenia-login" class="labelInput contrasenia">
                                             Contraseña
                                         </label>
+                                        
                                     </div>
-                                    <a href="#" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
+                                    <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                            <div
+                                class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
                                 <div class="text-center usuarioInvalido" id="usuario-invalido">
-                                    <p>Los datos ingresados no coinciden con ninguna cuenta</p>
-                                </div>
+                                    <p>Contraseña incorrecta. Intenta de nuevo</p>
+                                  </div>
                                 <button class="btn btnIngresar" type="submit">INGRESAR</button>
                                 <div class="d-flex pt-4 registrarseWrapp justify-content-center">
                                     <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
@@ -339,7 +342,7 @@
         crossorigin="anonymous"></script>
     <!--JS Script-->
     <script src="../js/producto.js"></script>
-    <script src="../js/login.js"></script>
+    <script type="module" src="/js/login.js"></script>
 </body>
 
 </html>

@@ -29,13 +29,13 @@ form.addEventListener('submit', function(e) {
     if (admin && clave === "AdminCoco"){
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       form.reset();
-      window.location.href = 'index.html';
+      window.location.href = '../index.html';
     } else if (usuario && usuario.claveUsu === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
       iconLogin.classList.remove('fa-user');
       iconLogin.classList.add('fa-right-from-bracket');
-      window.location.href = 'index.html';
+      window.location.href = '../index.html';
     } else {
     // Credenciales inválidas
     usuarioInvalido.style.display = "block";
@@ -65,15 +65,17 @@ if (usuarioActivo !== null && usuarioActivo !== undefined) {
   iconLogin.classList.remove('fa-user');
   iconLogin.classList.add('fa-right-from-bracket');
   
-  btnLogin.addEventListener('click', function() {
-    localStorage.removeItem('usuarioActual');
-    window.location.href = 'index.html';
-  });
+  btnLogin.addEventListener('click', logout);
 
 } else {
   iconLogin.classList.add('fa-user');
   iconLogin.classList.remove('fa-right-from-bracket');
   console.log("No hay ningún usuario actual.");
+}
+
+function logout() {
+  localStorage.removeItem('usuarioActual');
+  window.location.href = '../index.html';
 }
 
 document.addEventListener('DOMContentLoaded', function() {

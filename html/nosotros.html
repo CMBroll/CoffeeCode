@@ -61,8 +61,8 @@
         </div>
       </nav>
       <div class="botonesContainer">
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-          <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+        <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
         </button>
         <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
@@ -80,55 +80,55 @@
           </div>
         </div>
       </div>
-      <!--Login Modal-->
-      <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content modalBg">
-            <div class="modal-header">
-              <div class="ms-auto">
-                <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
-              </div>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                aria-label="Close"></button>
+    </div>
+    <!--Login Modal-->
+    <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modalBg">
+          <div class="modal-header">
+            <div class="ms-auto">
+              <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
             </div>
-            <form id="form-login">
-              <div class="modal-body">
-                <div class="form">
-                  <div class="formContainer d-flex flex-column">
-                    <h3>Iniciar Sesión</h3>
-                    <div class="formItem mt-4">
-                      <input type="email" name="email" class="form-control form-control-login focus-ring inputWrap"
-                        id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
-                      <label for="mail-login" class="labelInput correo">
-                        Correo Electrónico
-                      </label>
-                    </div>
-                    <div class="formItem mt-4">
-                      <input type="password"
-                        class="form-control form-control-login focus-ring contraseniaInput inputWrap"
-                        id="contrasenia-login" minlength="8" maxlength="20" required>
-                      <label for="contrasenia-login" class="labelInput contrasenia">
-                        Contraseña
-                      </label>
-                    </div>
-                    <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="form-login">
+            <div class="modal-body">
+              <div class="form">
+                <div class="formContainer d-flex flex-column">
+                  <h3>Iniciar Sesión</h3>
+                  <div class="formItem mt-4">
+                    <input type="email" name="email" class="form-control form-control-login focus-ring inputWrap"
+                      id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
+                    <label for="mail-login" class="labelInput correo">
+                      Correo Electrónico
+                    </label>
                   </div>
-                </div>
-                <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
-                  <div class="text-center usuarioInvalido" id="usuario-invalido">
-                    <p>Los datos ingresados no coinciden con ninguna cuenta</p>
+                  <div class="formItem mt-4">
+                    <input type="password" class="form-control form-control-login focus-ring contraseniaInput inputWrap"
+                      id="contrasenia-login" minlength="8" maxlength="20" required>
+                    <label for="contrasenia-login" class="labelInput contrasenia">
+                      Contraseña
+                    </label>
+
                   </div>
-                  <button class="btn btnIngresar" type="submit">INGRESAR</button>
-                  <div class="d-flex pt-4 registrarseWrapp justify-content-center">
-                    <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
-                    <a href="/html/registro.html" class="registrarse">Registrarse</a>
-                  </div>
+                  <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
                 </div>
               </div>
-            </form>
-          </div>
+              <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                <div class="text-center usuarioInvalido" id="usuario-invalido">
+                  <p>Contraseña incorrecta. Intenta de nuevo</p>
+                </div>
+                <button class="btn btnIngresar" type="submit">INGRESAR</button>
+                <div class="d-flex pt-4 registrarseWrapp justify-content-center">
+                  <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
+                  <a href="/html/registro.html" class="registrarse">Registrarse</a>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
     </div>
   </header>
   <!--Fin Navbar-->
@@ -261,6 +261,7 @@
   <!--Inicio Script -->
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="../js/irarriba.js"></script>
+  <script type="module" src="/js/login.js"></script>
   <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

@@ -34,6 +34,7 @@ a {
 
 .form-control:focus {
   background-color: #5a4131;
+  color: var(--marronClaro);
   box-shadow: none;
 }
 

@@ -112,11 +112,11 @@ let iconContrasenia = document.getElementById('icon-contrasenia');
 iconContrasenia.addEventListener('click', function(){
   if (claveInput.type === 'password') {
     claveInput.type = 'text';
-    iconContrasenia.classList.remove('fa-eye');
-    iconContrasenia.classList.add('fa-eye-slash');
-  } else {
-    claveInput.type = 'password';
     iconContrasenia.classList.remove('fa-eye-slash');
     iconContrasenia.classList.add('fa-eye');
+  } else {
+    claveInput.type = 'password';
+    iconContrasenia.classList.remove('fa-eye');
+    iconContrasenia.classList.add('fa-eye-slash');
   }
 });

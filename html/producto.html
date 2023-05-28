@@ -21,112 +21,119 @@
 </head>
 
 <body>
-    <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>
-    <header class="headerContainer">
-        <nav class="navbar navbar-expand-lg navBody">
-            <div class="container-fluid navContainer">
-                <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                    <span class="navbar-toggler-icon olas"></span>
+    <header>
+        <p class="topBanner d-flex justify-content-center align-items-center">20% DE DESCUENTO EN ACCESORIOS</p>
+        <div class="headerContainer">
+            <nav class="navbar navbar-expand-lg navBody">
+                <div class="container-fluid  navContainer">
+                    <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-icon olas"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="imgLogo" src="/src/img/LogoCOCO.svg"
+                            alt="logo CoCo"></a>
+                    <div class="offcanvas burgerMenu offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2" href="./index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2" href="/html/catalogo.html">Catálogo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2" href="/html/nosotros.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2" href="/html/contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item hidden" id="admin-link">
+                                    <a class="nav-link mx-2" href="/html/admin.html">Administración</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="botonesContainer">
+                <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="imgLogo" src="../src/img/LogoCOCO.svg"
-                        alt="logo CoCo"></a>
-                <div class="offcanvas burgerMenu offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
-                    tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
+                    <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
+                </button>
+
+                <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                        <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
+                        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/html/catalogo.html">Catálogo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/html/nosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="/html/contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+                    <div class="contenidoCarrito offcanvas-body " id="canvas-container">
+
                     </div>
                 </div>
             </div>
-        </nav>
-        <div class="botonesContainer">
-            <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
-                <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
-            </button>
-            <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
-                <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
-            </button>
-
-            <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
-                    <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="contenidoCarrito offcanvas-body " id="canvas-container">
-
-                </div>
-            </div>
-        </div>
-        <!--Login Modal-->
-        <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content modalBg">
-                    <div class="modal-header">
-                        <div class="ms-auto">
-                            <img width="150px" src="../src/img/CirculoCoco.svg" alt="Logo CoCo">
+            <!--Login Modal-->
+            <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content modalBg">
+                        <div class="modal-header">
+                            <div class="ms-auto">
+                                <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
+                        <form id="form-login">
+                            <div class="modal-body">
+                                <div class="form">
+                                    <div class="formContainer d-flex flex-column">
+                                        <h3>Iniciar Sesión</h3>
+                                        <div class="formItem mt-4">
+                                            <input type="email" name="email"
+                                                class="form-control form-control-login focus-ring inputWrap"
+                                                id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50"
+                                                required>
+                                            <label for="mail-login" class="labelInput correo">
+                                                Correo Electrónico
+                                            </label>
+                                        </div>
+                                        <div class="formItem mt-4">
+                                            <input type="password"
+                                                class="form-control form-control-login focus-ring contraseniaInput inputWrap"
+                                                id="contrasenia-login" minlength="8" maxlength="20" required>
+                                            <label for="contrasenia-login" class="labelInput contrasenia">
+                                                Contraseña
+                                            </label>
+                                            <i class="fa-regular fa-eye-slash" id="icon-contrasenia"></i>
+                                            
+                                        </div>
+                                        <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                                    <div class="text-center usuarioInvalido" id="usuario-invalido">
+                                        <p>Datos ingresados incorrectos. Intenta de nuevo</p>
+                                    </div>
+                                    <button class="btn btnIngresar" type="submit">INGRESAR</button>
+                                    <div class="d-flex pt-4 registrarseWrapp justify-content-center">
+                                        <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
+                                        <a href="/html/registro.html" class="registrarse">Registrarse</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <form id="form-login">
-                        <div class="modal-body">
-                            <div class="form">
-                                <div class="formContainer d-flex flex-column">
-                                    <h3>Iniciar Sesión</h3>
-                                    <div class="formItem mt-4">
-                                        <input type="email" name="email"
-                                            class="form-control form-control-login focus-ring inputWrap"
-                                            id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50"
-                                            required>
-                                        <label for="mail-login" class="labelInput correo">
-                                            Correo Electrónico
-                                        </label>
-                                    </div>
-                                    <div class="formItem mt-4">
-                                        <input type="password"
-                                            class="form-control form-control-login focus-ring contraseniaInput inputWrap"
-                                            id="contrasenia-login" minlength="8" maxlength="20" required>
-                                        <label for="contrasenia-login" class="labelInput contrasenia">
-                                            Contraseña
-                                        </label>
-                                        <i class="fa-regular fa-eye" id="icon-contrasenia"></i>
-                                    </div>
-                                    <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
-                                </div>
-                            </div>
-                            <div
-                                class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
-                                <div class="text-center usuarioInvalido" id="usuario-invalido">
-                                    <p>Contraseña incorrecta. Intenta de nuevo</p>
-                                  </div>
-                                <button class="btn btnIngresar" type="submit">INGRESAR</button>
-                                <div class="d-flex pt-4 registrarseWrapp justify-content-center">
-                                    <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
-                                    <a href="/html/registro.html" class="registrarse">Registrarse</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

@@ -25,9 +25,16 @@ form.addEventListener('submit', function(e) {
   const mail = mailInput.value;
   const clave = claveInput.value;
   const usuario = arrayUsuarios.find(usuario => usuario.mailUsu === mail);
-  const admin = arrayUsuarios.find(usuario => usuario.mailUsu.toLowerCase() === "admin@coco.com");
-    if (admin && clave === "AdminCoco"){
-      localStorage.setItem('usuarioActual', JSON.stringify(usuario));
+  
+  if (mail.toLowerCase() === "admin@coco.com" && clave === "AdminCoco") {
+    const admin = {
+      id: "000",
+      nombreApellido: "Coco",
+      username: "admin",
+      mailUsu: "admin@coco.com",
+      claveUsu: "AdminCoco",
+    };
+      localStorage.setItem('usuarioActual', JSON.stringify(admin));
       form.reset();
       Swal.fire({
         title: 'Ingresaste como administrador',
@@ -44,8 +51,7 @@ form.addEventListener('submit', function(e) {
     } else if (usuario && usuario.claveUsu === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
-      iconLogin.classList.remove('fa-user');
-      iconLogin.classList.add('fa-right-from-bracket');
+      
       Swal.fire({
         title: 'Inicio de sesión exitoso!',
         text: 'Bienvenid@ '+ usuario.nombreApellido +'!',

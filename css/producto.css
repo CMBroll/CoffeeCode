@@ -30,7 +30,13 @@ body main {
 li.breadcrumb-item.active {
     color: var(--marronClaro);
 }
-
+.offcanvas .offcanvas-body, .offcanvas-header {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+}
+.modal-content .modal-header {
+    border: 0;
+}
 /*Sección detalle producto*/
 .productoWrap {
     padding: 0 5rem 5rem;

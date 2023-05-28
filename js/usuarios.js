@@ -8,14 +8,6 @@ const botonSubmit = document.getElementById('botonSubmit')
 
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-const admin = {
-    id: "000",
-    nombreApellido: "Coco",
-    username: "admin",
-    mailUsu: "admin@coco.com",
-    claveUsu: "AdminCoco",
-};
-usuarios[0] = admin;
 
 localStorage.setItem("usuarios", JSON.stringify(usuarios));
 

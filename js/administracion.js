@@ -1,5 +1,11 @@
 import { arraynumeros, generadorId } from "./numerorandom.js";
 
+function logout() {
+  localStorage.removeItem('usuarioActual');
+  window.location.href = '../index.html';
+}
+const btnLogin = document.getElementById('btn-login');
+btnLogin.addEventListener('click', logout);
 //Inicio script de bootstrap para validar el formulario
 (() => {
   "use strict";
@@ -73,7 +79,7 @@ formularioproductos.addEventListener("input", function() {
   } else {
     codigoPrecio.setCustomValidity("")
   }
-  if(valorDescripcion.length <15 || valorDescripcion.length > 150){
+  if(valorDescripcion.length < 9 || valorDescripcion.length > 150){
     codigoDescripcion.setCustomValidity("a")
   } else{
     codigoDescripcion.setCustomValidity("")
@@ -224,12 +230,12 @@ const tablaUsuarios = document.getElementById("tablaUsuarios")
 
 obtenerUsuarios.forEach((usuario) => {
   const fila = `
-  <tr id="fila-${usuario.mail}">
-    <th scope="row">${usuario.nombre}</th>
-    <td>${usuario.mail}</td>
-    <td>${usuario.clave}</td>
+  <tr id="fila-${usuario.mailUsu}">
+    <th scope="row">${usuario.nombreApellido}</th>
+    <td>${usuario.mailUsu}</td>
+    <td>${usuario.claveUsu}</td>
     <td>
-      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mail}"></button>
+      <button class="btn btn-outline-secondary eliminarusuario" data-correo="${usuario.mailUsu}"></button>
     </td>
   </tr>
   `;
@@ -241,10 +247,10 @@ obtenerUsuarios.forEach((usuario) => {
 tablaUsuarios.addEventListener("click", (e) => {
   if (e.target.classList.contains("eliminarusuario")) {
     const correo = e.target.dataset.correo;
-    const usuario = obtenerUsuarios.find((usuario) => usuario.mail === correo);
+    const usuario = obtenerUsuarios.find((usuario) => usuario.mailUsu === correo);
 
     swal({
-      title: "¿Está seguro de que desea borrar este usuario?",
+      title: `¿Está seguro de que desea borrar el usuario ${usuario.nombreApellido}?`,
       text: "Una vez borrado no se puede recuperar",
       icon: "warning",
       buttons: true,
@@ -258,7 +264,7 @@ tablaUsuarios.addEventListener("click", (e) => {
         }
         const fila = document.getElementById(`fila-${correo}`);
         fila.remove();
-        swal("El usuario fue eliminado exitosamente", {
+        swal(`El usuario ${usuario.nombreApellido} fue eliminado exitosamente`, {
           icon: "/src/img/CorrectoCafe.png",
         });
       } else {

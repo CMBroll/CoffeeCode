@@ -13,9 +13,28 @@
     background: var(--marronClaro);
     color: var(--marronNavbar)
 }
+.hidden {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: #0f0908;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #341f14;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #0f0908;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--marronClaro);
+}
 /* COMIENZO NAVBAR */
-header .topBanner {
+/* header .topBanner {
     height: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
@@ -25,7 +44,7 @@ header .topBanner {
     background-color: var(--verdeMoho);
     padding-top: 1rem;
     margin: 0;
-}
+} */
 
 .imgLogo {
     width: 12rem;
@@ -102,7 +121,6 @@ button.navbarBtn .navbar-toggler-icon {
     text-align: center;
     color: var(--marronClaro);
     background-color: var(--verdeMoho);
-    padding-top: 1rem;
     margin: 0;
 }
 
@@ -228,6 +246,13 @@ button.navbarBtn .navbar-toggler-icon {
 .formItem {
     position: relative;
     margin-bottom: 15px
+}
+
+div.formItem i#icon-contrasenia {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
 }
 
 .formItem input {
@@ -418,10 +443,6 @@ a.registrarse {
     color: var(--marronOscuro);
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background-color: transparent;
-}
 
 .btn-close {
     color: var(--marronClaro);
@@ -677,18 +698,6 @@ a.registrarse {
 .headerContainer {
     background-color: #33241b;
     justify-content: center;
-}
-
-.topBanner {
-    height: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.7rem;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    color: var(--marronClaro);
-    background-color: var(--verdeMoho);
-    padding-top: 1rem;
-    margin: 0;
 }
 
 .imgLogo {
@@ -1154,3 +1163,148 @@ footer p {
 }
 
 /* FINAL DEL FOOTER */
+
+/*CARRITO*/
+
+
+.offcanvasBg  {
+    background-image: url(/src/img/CirculoCoco.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 30rem !important;
+}
+
+.offcanvasBg img {
+    height: 100%;
+    width: 100%;
+}
+
+.no-border {
+    border: 1px solid #956037;
+}
+
+
+.colorBg {
+    background-color: #19110d !important;
+}
+
+.colorTexto {
+    color: #eaddcd;
+}
+
+
+.contenidoCarrito {
+    width: 100%;
+    margin: 0 auto;
+    height: 864px;
+}
+
+.productoCarrito {
+    background-color: #33241b;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.infoCarrito {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoCarrito h2 {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.infoCarrito p {
+    width: 100%;
+
+}
+
+.productoCarrito img {
+    max-height: 30rem;
+    max-width: 60%;
+}
+
+.imgProducto {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+.restar {
+    cursor: pointer;
+    margin: 0rem 1rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.cantidadCarrito {
+    font-weight: 700;
+}
+
+.sumar {
+    cursor: pointer;
+    margin: 0rem 2rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.totalContent {
+    position: relative;
+    bottom: 0;
+    background-color: #19110d;
+    width: 30rem;
+    height: 10%;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.finalizarCompra, .finalizarCompra a {
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    margin: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+@media (max-width:405px) {
+    .totalContent {
+        width: 24rem;
+    }
+
+    .totalContent p {
+        font-size: 1.3rem;
+        width: 30%;
+    }
+
+    .finalizarCompra {
+        width: 90%;
+        
+    }
+
+    .finalizarCompra P {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+}

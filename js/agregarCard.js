@@ -4,7 +4,7 @@ const cartas = document.getElementById("cartas");
 
 JSON.parse(obtenerproductos).forEach((producto) => {
   const carta = `
-    <div class=" product-item" id="${producto.categoria}" style="width: 25rem;">
+    <div class=" product-item" id="${producto.categoria}">
     <div class="box d-flex flex-column justify-content-between align-items-center p-3">
     <h3>${producto.nombre}</h3>
     <div class="d-flex imgAdapt">
@@ -15,7 +15,7 @@ JSON.parse(obtenerproductos).forEach((producto) => {
         <span class="font-weight-bold">$ ${producto.precio}</span>
     </div>
     <div class="d-flex flex-column anchoContenedorBoton">
-        <button class="botonCarrito" id="botonAgregar">Agregar al carrito</button>
+        <button class="botonCarrito botonAgregar" id="botonAgregar" data-id="${producto.codigo}" data-filter="${producto.categoria}">Agregar al carrito</button>
         <button class="botonCarrito">Mas información</button>
     </div>
     </div>

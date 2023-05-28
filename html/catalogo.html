@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>
+        <p class="topBanner d-flex justify-content-center align-items-center">20% DE DESCUENTO EN ACCESORIOS</p>
         <div class="headerContainer">
             <nav class="navbar navbar-expand-lg navBody">
                 <div class="container-fluid  navContainer">
@@ -50,14 +50,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link mx-2" href="/html/contacto.html">Contacto</a>
                                 </li>
+                                <li class="nav-item hidden" id="admin-link">
+                                    <a class="nav-link mx-2" href="/html/admin.html">Administración</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
             <div class="botonesContainer">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+                <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
                 </button>
                 <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
@@ -108,6 +111,7 @@
                                             <label for="contrasenia-login" class="labelInput contrasenia">
                                                 Contraseña
                                             </label>
+                                            <i class="fa-regular fa-eye-slash" id="icon-contrasenia"></i>
                                         </div>
                                         <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
                                     </div>
@@ -115,7 +119,7 @@
                                 <div
                                     class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
                                     <div class="text-center usuarioInvalido" id="usuario-invalido">
-                                        <p>Los datos ingresados no coinciden con ninguna cuenta</p>
+                                        <p>Datos ingresados incorrectos. Intenta de nuevo</p>
                                     </div>
                                     <button class="btn btnIngresar" type="submit">INGRESAR</button>
                                     <div class="d-flex pt-4 registrarseWrapp justify-content-center">
@@ -148,7 +152,7 @@
             </div>
             <hr>
             <div class="lista-productos d-flex flex-wrap justify-content-center" id="cartas">
-                <div class="product-item" id="granos">
+                <!-- <div class="product-item" id="granos">
                     <div class="box d-flex flex-column justify-content-between align-items-center p-3 "
                         category="granos">
                         <h3>CAFE PARIS</h3>
@@ -180,7 +184,7 @@
                             <button class="botonCarrito">Mas información</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -231,8 +235,9 @@
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
-    <script src="/js/login.js"></script>
+    <script type="module" src="/js/login.js"></script>
     <script src="/js/agregarCard.js"></script>
+    <script src="/js/carrito.js"></script>
     <script src="/js/filtroProducto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

@@ -10,7 +10,7 @@ const iconLogin = document.getElementById("icon-login");
 
 mailInput.addEventListener('input', function() {
   const valor = mailInput.value.trim();
-  if (arrayUsuarios.some(usuario => usuario.mail === valor)) {
+  if (arrayUsuarios.some(usuario => usuario.mailUsu === valor)) {
     mailInput.classList.remove('invalido');
     mailInput.classList.add('valido');
   } else {
@@ -19,21 +19,51 @@ mailInput.addEventListener('input', function() {
   }
 });
 
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const mail = mailInput.value;
   const clave = claveInput.value;
-  const usuario = arrayUsuarios.find(usuario => usuario.mail === mail);
-  const admin = arrayUsuarios.find(usuario => usuario.mail.toLowerCase() === "admin@coco.com");
-    if (admin && clave === "AdminCoco"){
-      localStorage.setItem('usuarioActual', JSON.stringify(usuario));
+  const usuario = arrayUsuarios.find(usuario => usuario.mailUsu === mail);
+  
+  if (mail.toLowerCase() === "admin@coco.com" && clave === "AdminCoco") {
+    const admin = {
+      id: "000",
+      nombreApellido: "Coco",
+      username: "admin",
+      mailUsu: "admin@coco.com",
+      claveUsu: "AdminCoco",
+    };
+      localStorage.setItem('usuarioActual', JSON.stringify(admin));
       form.reset();
-    } else if (usuario && usuario.clave === clave) {
+      Swal.fire({
+        title: 'Ingresaste como administrador',
+        icon: 'success',
+        heightAuto: 'false',
+        background: '#33241b',
+        color: '#eddcc6',
+        confirmButtonColor: '#281c16',
+      }
+        ).then((result) => {
+          window.location.href = '../index.html';
+          
+      });
+    } else if (usuario && usuario.claveUsu === clave) {
       localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       console.log('Inicio de sesión exitoso');
-      iconLogin.classList.remove('fa-user');
-      iconLogin.classList.add('fa-right-from-bracket');
       
+      Swal.fire({
+        title: 'Inicio de sesión exitoso!',
+        text: 'Bienvenid@ '+ usuario.nombreApellido +'!',
+        icon: 'success',
+        heightAuto: 'false',
+        background: '#33241b',
+        color: '#eddcc6',
+        confirmButtonColor: '#281c16'}
+        ).then((result) => {
+          window.location.href = '../index.html';
+          
+      });
     } else {
     // Credenciales inválidas
     usuarioInvalido.style.display = "block";
@@ -63,10 +93,7 @@ if (usuarioActivo !== null && usuarioActivo !== undefined) {
   iconLogin.classList.remove('fa-user');
   iconLogin.classList.add('fa-right-from-bracket');
   
-  btnLogin.addEventListener('click', function() {
-    localStorage.removeItem('usuarioActual');
-    window.location.href = 'index.html';
-  });
+  btnLogin.addEventListener('click', logout);
 
 } else {
   iconLogin.classList.add('fa-user');
@@ -74,10 +101,28 @@ if (usuarioActivo !== null && usuarioActivo !== undefined) {
   console.log("No hay ningún usuario actual.");
 }
 
-const adminLink = document.getElementById('admin-link');
-const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
-if (cuentaActiva && cuentaActiva.nombre === 'Coco') {
-  adminLink.style.display = 'block';
-} else {
-  adminLink.style.display = 'none';
+function logout() {
+  localStorage.removeItem('usuarioActual');
+  window.location.href = '../index.html';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const adminLink = document.getElementById('admin-link');
+  const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
+
+  if (cuentaActiva && cuentaActiva.username === 'admin') {
+    adminLink.classList.remove('hidden');
+  }
+});
+let iconContrasenia = document.getElementById('icon-contrasenia');
+iconContrasenia.addEventListener('click', function(){
+  if (claveInput.type === 'password') {
+    claveInput.type = 'text';
+    iconContrasenia.classList.remove('fa-eye-slash');
+    iconContrasenia.classList.add('fa-eye');
+  } else {
+    claveInput.type = 'password';
+    iconContrasenia.classList.remove('fa-eye');
+    iconContrasenia.classList.add('fa-eye-slash');
+  }
+});

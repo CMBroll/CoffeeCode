@@ -16,12 +16,15 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/css/principal.css">
-  <link rel="stylesheet" href="../css/nosotros.css" />
+  <link rel="stylesheet" href="/css/nosotros.css">
+  <!--  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/38c2730a28/UntitledProject/style.css"> -->
+  <link rel="stylesheet" href="/css/irarriba.css">
+  <link rel="stylesheet" href="/css/fonts.css">
 </head>
 
 <body>
   <header>
-    <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>
+    <p class="topBanner d-flex align-items-center justify-content-center">20% DE DESCUENTO EN ACCESORIOS</p>
     <div class="headerContainer">
       <nav class="navbar navbar-expand-lg navBody">
         <div class="container-fluid  navContainer">
@@ -29,7 +32,7 @@
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
             <span class="navbar-toggler-icon olas"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img class="imgLogo" src="/src/img/LogoCOCO.svg"
+          <a class="navbar-brand" href="/index.html"><img class="imgLogo" src="/src/img/LogoCOCO.svg"
               alt="logo CoCo"></a>
           <div class="offcanvas burgerMenu offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -58,8 +61,8 @@
         </div>
       </nav>
       <div class="botonesContainer">
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-          <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+        <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
         </button>
         <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
@@ -77,59 +80,60 @@
           </div>
         </div>
       </div>
-      <!--Login Modal-->
-      <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content modalBg">
-            <div class="modal-header">
-              <div class="ms-auto">
-                <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
-              </div>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                aria-label="Close"></button>
+    </div>
+    <!--Login Modal-->
+    <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modalBg">
+          <div class="modal-header">
+            <div class="ms-auto">
+              <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
             </div>
-            <form id="form-login">
-              <div class="modal-body">
-                <div class="form">
-                  <div class="formContainer d-flex flex-column">
-                    <h3>Iniciar Sesión</h3>
-                    <div class="formItem mt-4">
-                      <input type="email" name="email" class="form-control form-control-login focus-ring inputWrap"
-                        id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
-                      <label for="mail-login" class="labelInput correo">
-                        Correo Electrónico
-                      </label>
-                    </div>
-                    <div class="formItem mt-4">
-                      <input type="password"
-                        class="form-control form-control-login focus-ring contraseniaInput inputWrap"
-                        id="contrasenia-login" minlength="8" maxlength="20" required>
-                      <label for="contrasenia-login" class="labelInput contrasenia">
-                        Contraseña
-                      </label>
-                    </div>
-                    <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="form-login">
+            <div class="modal-body">
+              <div class="form">
+                <div class="formContainer d-flex flex-column">
+                  <h3>Iniciar Sesión</h3>
+                  <div class="formItem mt-4">
+                    <input type="email" name="email" class="form-control form-control-login focus-ring inputWrap"
+                      id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
+                    <label for="mail-login" class="labelInput correo">
+                      Correo Electrónico
+                    </label>
                   </div>
-                </div>
-                <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
-                  <div class="text-center usuarioInvalido" id="usuario-invalido">
-                    <p>Los datos ingresados no coinciden con ninguna cuenta</p>
+                  <div class="formItem mt-4">
+                    <input type="password" class="form-control form-control-login focus-ring contraseniaInput inputWrap"
+                      id="contrasenia-login" minlength="8" maxlength="20" required>
+                    <label for="contrasenia-login" class="labelInput contrasenia">
+                      Contraseña
+                    </label>
+                    <i class="fa-regular fa-eye-slash" id="icon-contrasenia"></i>
                   </div>
-                  <button class="btn btnIngresar" type="submit">INGRESAR</button>
-                  <div class="d-flex pt-4 registrarseWrapp justify-content-center">
-                    <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
-                    <a href="/html/registro.html" class="registrarse">Registrarse</a>
-                  </div>
+                  <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
                 </div>
               </div>
-            </form>
-          </div>
+              <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                <div class="text-center usuarioInvalido" id="usuario-invalido">
+                  <p>Datos ingresados incorrectos. Intenta de nuevo</p>
+                </div>
+                <button class="btn btnIngresar" type="submit">INGRESAR</button>
+                <div class="d-flex pt-4 registrarseWrapp justify-content-center">
+                  <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
+                  <a href="/html/registro.html" class="registrarse">Registrarse</a>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
     </div>
   </header>
   <!--Fin Navbar-->
   <!--Inicio del main -->
+  <span class="ir-arriba"></span>
   <main class="main">
     <div class="container text-center mt-4">
       <h1>Sobre Nosotros</h1>
@@ -255,6 +259,9 @@
   <!--Fin del Footer -->
 
   <!--Inicio Script -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="/js/irarriba.js"></script>
+  <script type="module" src="/js/login.js"></script>
   <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

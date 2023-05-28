@@ -25,7 +25,7 @@
 
 <body>
 
-    <p class="topBanner">20% DE DESCUENTO EN ACCESORIOS</p>
+    <p class="topBanner d-flex justify-content-center align-items-center">20% DE DESCUENTO EN ACCESORIOS</p>
     <header class="headerContainer">
         <nav class="navbar navbar-expand-lg navBody">
             <div class="container-fluid  navContainer">
@@ -62,8 +62,8 @@
             </div>
         </nav>
         <div class="botonesContainer">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
-                <i class="fa-solid fa-user" style="color: #eddcc6;"></i>
+            <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
             </button>
             <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
@@ -99,8 +99,9 @@
                                     <h3>Iniciar Sesión</h3>
                                     <div class="formItem mt-4">
                                         <input type="email" name="email"
-                                            class="form-control form-control-login focus-ring inputWrap" id="mail-login"
-                                            pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
+                                            class="form-control form-control-login focus-ring inputWrap"
+                                            id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50"
+                                            required>
                                         <label for="mail-login" class="labelInput correo">
                                             Correo Electrónico
                                         </label>
@@ -112,13 +113,15 @@
                                         <label for="contrasenia-login" class="labelInput contrasenia">
                                             Contraseña
                                         </label>
+                                        <i class="fa-regular fa-eye-slash" id="icon-contrasenia"></i>
                                     </div>
                                     <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                            <div
+                                class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
                                 <div class="text-center usuarioInvalido" id="usuario-invalido">
-                                    <p>Los datos ingresados no coinciden con ninguna cuenta</p>
+                                    <p>Datos ingresados incorrectos. Intenta de nuevo</p>
                                 </div>
                                 <button class="btn btnIngresar" type="submit">INGRESAR</button>
                                 <div class="d-flex pt-4 registrarseWrapp justify-content-center">
@@ -238,7 +241,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
-    <script src="/js/login.js"></script>
+    <script type="module" src="/js/login.js"></script>
     <script src="/js/contacto.js"></script>
 </body>
 

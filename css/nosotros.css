@@ -71,7 +71,6 @@ main img {
     text-align: center;
     color: var(--marronClaro);
     background-color: var(--verdeMoho);
-    padding-top: 1rem;
     margin: 0;
 }
 

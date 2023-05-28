@@ -8,20 +8,38 @@ function validateForm(event) {
     // Validación de correo electrónico
     var emailPattern = new RegExp(emailInput.pattern);
     if (!emailPattern.test(emailInput.value)) {
-        alert("Ingrese una dirección de correo electrónico válida.");
+        Swal.fire({
+            text: 'Ingrese una dirección de correo electrónico válida.',
+            heightAuto: 'false',
+            background: '#33241b',
+            color: '#eddcc6',
+            confirmButtonColor: '#281c16',
+        })
         return;
     }
 
     // Validación de nombre
     var nombrePattern = new RegExp(nombreInput.pattern);
     if (!nombrePattern.test(nombreInput.value)) {
-        alert("Ingrese un nombre válido.");
+        Swal.fire({
+            text: 'Ingrese un nombre válido.',
+            heightAuto: 'false',
+            background: '#33241b',
+            color: '#eddcc6',
+            confirmButtonColor: '#281c16',
+        })
         return;
     }
 
     // Validación de mensaje
     if (mensajeInput.value.trim() === "") {
-        alert("Ingrese un mensaje.");
+        Swal.fire({
+            text: 'Ingrese un mensaje.',
+            heightAuto: 'false',
+            background: '#33241b',
+            color: '#eddcc6',
+            confirmButtonColor: '#281c16',
+        })
         return;
     }
 

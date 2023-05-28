@@ -16,6 +16,23 @@
 .hidden {
     display: none;
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0908;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #341f14;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #0f0908;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--marronClaro);
+}
 /* COMIENZO NAVBAR */
 /* header .topBanner {
     height: 2.5rem;
@@ -426,10 +443,6 @@ a.registrarse {
     color: var(--marronOscuro);
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background-color: transparent;
-}
 
 .btn-close {
     color: var(--marronClaro);

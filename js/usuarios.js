@@ -110,14 +110,17 @@ formRegistro.addEventListener('submit', (e) => {
     patternUsuario.test(valorUsername) &&
     patternMail.test(valorMail) &&
     patternClave.test(valorClave)
-  ) {
-    
-    usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail, claveUsu: valorClave };
-    usuarios.push(usuario);
-
-    formRegistro.reset();
-    confirmacionForm(); 
-}
-  localStorage.setItem("usuarios", JSON.stringify(usuarios));
-});
+    ) {
+      if (usuarios.some(u => u.mailUsu === valorMail)) {
+        mailUsu.setCustomValidity('El correo electrónico ya está registrado');
+      } else {
+        usuario = { id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail };
+        usuarios.push(usuario);
   
+        formRegistro.reset();
+        confirmacionForm();
+        console.log(usuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      }
+    }
+  });

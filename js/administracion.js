@@ -79,7 +79,7 @@ formularioproductos.addEventListener("input", function() {
   } else {
     codigoPrecio.setCustomValidity("")
   }
-  if(valorDescripcion.length <15 || valorDescripcion.length > 150){
+  if(valorDescripcion.length < 9 || valorDescripcion.length > 150){
     codigoDescripcion.setCustomValidity("a")
   } else{
     codigoDescripcion.setCustomValidity("")

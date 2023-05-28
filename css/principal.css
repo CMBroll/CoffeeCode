@@ -155,11 +155,7 @@ button.navbarBtn .navbar-toggler-icon {
     transition: 0.5s;
 }
 
-button.navbarBtn .navbar-toggler-icon {
-    background-color: var(--marronNavbar);
-    background-image: url(../src/img/LieasOlas.svg);
-    width: 2rem;
-}
+
 
 .offcanvas {
     background-color: var(--marronNavbar);
@@ -732,7 +728,7 @@ a.registrarse {
 
 button.navbarBtn .navbar-toggler-icon {
     background-color: var(--marronNavbar);
-    background-image: url(../src/img/LieasOlas.svg);
+    background-image: url(../src/img/LineasOlas.svg);
     width: 2rem;
 }
 
@@ -748,27 +744,11 @@ button.navbarBtn .navbar-toggler-icon {
     border-bottom-right-radius: 25px;
 }
 
-.olas {
-    display: flex;
-    width: 50px;
-    height: 32px;
-    background-position: 0px 0;
-    background-size: 50px;
-    animation: olasIcono 5s linear infinite;
-    background-repeat: repeat-x;
-}
-
 .botonesContainer {
     margin: 0;
     display: flex;
     align-items: end;
     justify-content: end;
-}
-
-@keyframes olasIcono {
-    to {
-        background-position: -50px 0;
-    }
 }
 
 /*Login Modal*/

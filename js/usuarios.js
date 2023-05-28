@@ -27,7 +27,8 @@ const confirmacionForm = () =>{
         heightAuto: 'false',
         background: '#eddcc6',
         confirmButtonColor: '#281c16'}
-      )
+      ) .then((result) => {
+        window.location.href = '../index.html';});
 }
 
 formRegistro.addEventListener('input', ()=>{
@@ -114,13 +115,13 @@ formRegistro.addEventListener('submit', (e) => {
       if (usuarios.some(u => u.mailUsu === valorMail)) {
         mailUsu.setCustomValidity('El correo electrónico ya está registrado');
       } else {
-        usuario = { id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail };
+        usuario = {id: id, nombreApellido: valorNombreApellido, username: valorUsername, mailUsu: valorMail, claveUsu: valorClave };
         usuarios.push(usuario);
-  
         formRegistro.reset();
-        confirmacionForm();
-        console.log(usuario);
+        confirmacionForm(); 
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
-      }
+        localStorage.setItem('usuarioActual',JSON.stringify(usuario));
+        }
     }
-  });
+    });
+      

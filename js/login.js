@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const adminLink = document.getElementById('admin-link');
   const cuentaActiva = JSON.parse(localStorage.getItem('usuarioActual'));
 
-  if (cuentaActiva && cuentaActiva.nombreApellido === 'admin') {
+  if (cuentaActiva && cuentaActiva.username === 'admin') {
     adminLink.classList.remove('hidden');
   }
 });

@@ -22,6 +22,10 @@ h1 {
     color: #eddcc6;
 }
 
+h5{
+    color: var(--marronClaro) !important;
+}
+
 .frase p {
     color: #eddcc6;
     font-size: 20px;
@@ -38,14 +42,14 @@ main img {
     width: 23rem;
     height: 30rem;
     border-radius: 1rem;
-    background-color: #160d0b;
+    background-color: var(--marronNavbar) !important;
     box-shadow: 2px 1px 15px -1px black;
-    transition: background-color 1s;
+    transition: 1s;
 }
 
 .card:hover {
     transform: scale(1.1);
-    background-color: #341f14;
+    background-color: var(--marronClaro);
 }
 
 .card img{

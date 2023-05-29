@@ -1,7 +1,7 @@
 # PROYECTO N°2 COFFEECODE - ROLLING CODE
 ![](https://i.ibb.co/LrHTrf7/Grupo2rolling.png)
-- Sobre nuestra web:
--------------
+#- Sobre nuestra web:
+
 La página web **COFFEECODE** es un exclusivo e-commerce dedicado a la venta de cafés de altísima calidad premium. Nuestro catálogo cuenta con una amplia selección de productos, que incluye cápsulas de café y paquetes de granos selectos. Además, en un futuro próximo, ampliaremos nuestra oferta para incluir accesorios y máquinas de hacer café de primera categoría.
 
 Trabajamos en estrecha colaboración con productores especializados para asegurarnos de que solo ofrecemos granos de café altamente controlados y seleccionados. Cada taza de café que nuestros clientes disfrutan es el resultado de un proceso meticuloso y una dedicación inquebrantable hacia la calidad.
@@ -39,13 +39,11 @@ Esta página está reservada exclusivamente para el Administrador del sitio. Aqu
 Aquí los usuarios tendrán la posibilidad de registrarse en la página web. Al registrarte, podrás acceder a funcionalidades adicionales, recibir actualizaciones exclusivas y realizar compras de forma más rápida y sencilla.
 
 # Admin:
--------------
 *Para acceder como administrador*:
 > **Usuario:** admin@coco.com
 **Contraseña:** AdminCoco
 
 # Integrantes:
--------------
 - Aguirre Alberto
 - Broll Mauricio
 - Cavanna Victoria

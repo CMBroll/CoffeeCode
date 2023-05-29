@@ -6,10 +6,9 @@ const mailUsu = document.getElementById('mailUsu')
 const claveUsu = document.getElementById('claveUsu')
 const botonSubmit = document.getElementById('botonSubmit')
 
+let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-localStorage.setItem("usuarios", JSON.stringify(usuarios));
+localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
 const confirmacionForm = () =>{
     Swal.fire({
@@ -111,7 +110,7 @@ formRegistro.addEventListener('submit', (e) => {
         usuarios.push(usuario);
         formRegistro.reset();
         confirmacionForm(); 
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
         localStorage.setItem('usuarioActual',JSON.stringify(usuario));
         }
     }

@@ -225,6 +225,22 @@ listaProductos.addEventListener("click", (e) => {
   }
 });
 
+let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+const admin = {
+  id: "000",
+  nombreApellido: "Coco",
+  username: "admin",
+  mailUsu: "admin@coco.com",
+  claveUsu: "AdminCoco",
+};
+
+const adminExistente = usuarios.find((usuario) => usuario.username === "admin");
+if (!adminExistente) {
+  usuarios.push(admin);
+  localStorage.setItem('usuarios', JSON.stringify(usuarios));
+}
+
 const obtenerUsuarios = JSON.parse(localStorage.getItem("usuarios"))
 const tablaUsuarios = document.getElementById("tablaUsuarios")
 

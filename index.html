@@ -19,10 +19,21 @@
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="stylesheet" href="/css/animacion.css">
     <link rel="stylesheet" href="/css/irarriba.css">
+    <link rel="stylesheet" href="/css/cargando.css">
 
 </head>
 
 <body>
+
+    <div id="pantalla-carga">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-column justify-content-center mb-3"><img src="/src/img/LogoCOCO.svg" width="150px" alt="Cargando..."></div>
+            <div class="contenido-carga d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-center"><img src="/src/img/Cargando.gif" alt="Cargando..."></div>
+            <h3>Cargando</h3>
+        </div>
+        </div>
+    </div>
 
     <header>
         <p class="topBanner d-flex justify-content-center align-items-center">20% DE DESCUENTO EN ACCESORIOS</p>
@@ -322,6 +333,7 @@
         <script type="module" src="/js/login.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="/js/irarriba.js"></script>
+        <script src="/js/cargando.js"></script>
     <!-- <script src="/js/verificadorRutas.js"></script> -->
 </body>
 

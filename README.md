@@ -11,7 +11,6 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 ¡Bienvenido a nuestra página web, donde el buen café se encuentra con la comodidad del comercio electrónico!
 
 #- Marca COCO (CoffeeCode):
--------------
 
 [![](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)
 
@@ -19,7 +18,7 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 La filosofía de **"Coco"** se basa en la pasión por el café y el amor por el código. Por un lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado, el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
 
 
-##- Estructura de la pagina
+#- Estructura de la pagina:
 **Página Principal:**
 En esta sección encontrarás información detallada sobre los productos que ofrecemos, incluyendo características, beneficios y detalles relevantes.
 

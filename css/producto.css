@@ -219,29 +219,29 @@ button.carousel-control-next span.carousel-control-next-icon {
     padding-bottom: 10rem;
 }
 
+section.parallaxCafe {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 25vh;
+}
+
+section.parallaxCafe video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+section.parallaxCafe img.cafeNombre {
+    width: 170px;
+}
 /*==MEDIA QUERIES==*/
 @media (min-width: 768px) {
-    section.parallaxCafe {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        width: 100%;
-        height: 25vh;
-    }
-
-    section.parallaxCafe video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
-        height: auto;
-        z-index: -1;
-    }
-
-    section.parallaxCafe img.cafeNombre {
-        width: 20%;
-    }
     .detallesWrapper .compraBtns {
         display: flex;
     }
@@ -258,10 +258,6 @@ button.carousel-control-next span.carousel-control-next-icon {
 
 @media (max-width: 768px) {
 
-    section.parallaxCafe video,
-    section.parallaxCafe img.cafeNombre {
-        display: none;
-    }
 
     button.carritoBtn {
         width: 100%;

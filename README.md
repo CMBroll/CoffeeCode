@@ -1,6 +1,4 @@
-# CoffeeCode
-
-### PROYECTO N°2 COFFEECODE - ROLLING CODE
+# PROYECTO N°2 COFFEECODE - ROLLING CODE
 ![](https://i.ibb.co/LrHTrf7/Grupo2rolling.png)
 - Sobre nuestra web:
 -------------
@@ -12,7 +10,7 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 
 ¡Bienvenido a nuestra página web, donde el buen café se encuentra con la comodidad del comercio electrónico!
 
-- Marca COCO (CoffeeCode):
+#- Marca COCO (CoffeeCode):
 -------------
 
 [![](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)
@@ -40,13 +38,13 @@ Esta página está reservada exclusivamente para el Administrador del sitio. Aqu
 **Página de Registro:**
 Aquí los usuarios tendrán la posibilidad de registrarse en la página web. Al registrarte, podrás acceder a funcionalidades adicionales, recibir actualizaciones exclusivas y realizar compras de forma más rápida y sencilla.
 
-Admin:
+# Admin:
 -------------
 *Para acceder como administrador*:
 > **Usuario:** admin@coco.com
 **Contraseña:** AdminCoco
 
-Integrantes:
+# Integrantes:
 -------------
 - Aguirre Alberto
 - Broll Mauricio

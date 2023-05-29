@@ -10,7 +10,7 @@ const iconLogin = document.getElementById("icon-login");
 
 mailInput.addEventListener('input', function() {
   const valor = mailInput.value.trim();
-  if (arrayUsuarios.some(usuario => usuario.mailUsu === valor)) {
+  if (arrayUsuarios.some(usuario => usuario.mailUsu === valor || valor.toLowerCase() === 'admin@coco.com')) {
     mailInput.classList.remove('invalido');
     mailInput.classList.add('valido');
   } else {
@@ -24,8 +24,7 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
   const mail = mailInput.value;
   const clave = claveInput.value;
-  const usuario = arrayUsuarios.find(usuario => usuario.mailUsu === mail);
-  
+  const usuario = arrayUsuarios.find(usuario => usuario.mailUsu === mail.toLowerCase());
   if (mail.toLowerCase() === "admin@coco.com" && clave === "AdminCoco") {
     const admin = {
       id: "000",

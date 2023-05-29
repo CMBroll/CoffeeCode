@@ -17,7 +17,7 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 
 [![](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)
 
-**“Coco”**es una marca que nace de la fusión de dos palabras clave: **"Coffee"**y**"Code"**. Esta combinación representa la unión perfecta entre la creatividad y la tecnología. En un mundo cada vez más digitalizado,**"Coco"**se presenta como una marca innovadora que busca brindar experiencias únicas a sus clientes.
+**“Coco”** es una marca que nace de la fusión de dos palabras clave: **"Coffee"**y**"Code"**. Esta combinación representa la unión perfecta entre la creatividad y la tecnología. En un mundo cada vez más digitalizado,**"Coco"**se presenta como una marca innovadora que busca brindar experiencias únicas a sus clientes.
 La filosofía de**"Coco"**se basa en la pasión por el café y el amor por el código. Por un lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado, el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
 
 

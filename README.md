@@ -1,6 +1,6 @@
 # PROYECTO N°2 COFFEECODE - ROLLING CODE
 ![](https://i.ibb.co/LrHTrf7/Grupo2rolling.png)
-#- Sobre nuestra web:
+#Sobre nuestra web:
 
 La página web **COFFEECODE** es un exclusivo e-commerce dedicado a la venta de cafés de altísima calidad premium. Nuestro catálogo cuenta con una amplia selección de productos, que incluye cápsulas de café y paquetes de granos selectos. Además, en un futuro próximo, ampliaremos nuestra oferta para incluir accesorios y máquinas de hacer café de primera categoría.
 
@@ -10,7 +10,7 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 
 ¡Bienvenido a nuestra página web, donde el buen café se encuentra con la comodidad del comercio electrónico!
 
-#- Marca COCO (CoffeeCode):
+#Marca COCO (CoffeeCode):
 
 [![](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)
 
@@ -18,7 +18,7 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 La filosofía de **"Coco"** se basa en la pasión por el café y el amor por el código. Por un lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado, el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
 
 
-#- Estructura de la pagina:
+#Estructura de la pagina:
 **Página Principal:**
 En esta sección encontrarás información detallada sobre los productos que ofrecemos, incluyendo características, beneficios y detalles relevantes.
 

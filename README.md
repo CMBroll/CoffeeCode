@@ -17,8 +17,8 @@ En nuestra página web, los usuarios podrán explorar nuestro catálogo, conocer
 
 [![](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)](https://i.ibb.co/rQWWPy7/Coco-Encabezado.png)
 
-**“Coco”** es una marca que nace de la fusión de dos palabras clave: **"Coffee"**y**"Code"**. Esta combinación representa la unión perfecta entre la creatividad y la tecnología. En un mundo cada vez más digitalizado,**"Coco"**se presenta como una marca innovadora que busca brindar experiencias únicas a sus clientes.
-La filosofía de**"Coco"**se basa en la pasión por el café y el amor por el código. Por un lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado, el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
+**“Coco”** es una marca que nace de la fusión de dos palabras clave: **"Coffee"** y **"Code"**. Esta combinación representa la unión perfecta entre la creatividad y la tecnología. En un mundo cada vez más digitalizado,**"Coco"** se presenta como una marca innovadora que busca brindar experiencias únicas a sus clientes.
+La filosofía de **"Coco"** se basa en la pasión por el café y el amor por el código. Por un lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado, el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
 
 
 ##- Estructura de la pagina
@@ -29,7 +29,7 @@ En esta sección encontrarás información detallada sobre los productos que ofr
 Aquí podrás explorar nuestro catálogo completo de productos, con la opción de utilizar un filtro de búsqueda para facilitar tu experiencia. Encuentra fácilmente lo que buscas y descubre nuestras diversas opciones.
 
 **Página Sobre nosotros:**
-En esta página conocerás a cada uno de los integrantes que formaron parte de este proyecto. Te brindaremos información acerca de nuestra experiencia, pasión por el café y los valores que nos inspiran.
+En esta página conocerás a cada uno de los integrantes que formaron parte de este proyecto.
 
 **Página de Contacto:**
 Este espacio te permitirá acceder a diferentes métodos para contactar con el dueño de la empresa de café. Si tienes alguna pregunta, sugerencia o deseas establecer una comunicación directa, aquí encontrarás la información necesaria.
@@ -38,7 +38,7 @@ Este espacio te permitirá acceder a diferentes métodos para contactar con el d
 Esta página está reservada exclusivamente para el Administrador del sitio. Aquí, el Administrador tendrá acceso para agregar nuevos productos, eliminarlos o realizar cambios en la lista de usuarios.
 
 **Página de Registro:**
-Aquí los usuarios tendrán la posibilidad de registrarse en nuestra página web. Al registrarte, podrás acceder a funcionalidades adicionales, recibir actualizaciones exclusivas y realizar compras de forma más rápida y sencilla.
+Aquí los usuarios tendrán la posibilidad de registrarse en la página web. Al registrarte, podrás acceder a funcionalidades adicionales, recibir actualizaciones exclusivas y realizar compras de forma más rápida y sencilla.
 
 Admin:
 -------------

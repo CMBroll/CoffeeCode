@@ -35,6 +35,7 @@ cartaProducto.addEventListener("click", (e) => {
 
       saveLocal();
     }
+    pintarCarrito();
   }
 });
 

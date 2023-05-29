@@ -201,7 +201,7 @@ listaProductos.addEventListener("click", (e) => {
     const producto = productos.find((producto) => producto.codigo === id);
 
     swal({
-      title: "Está seguro de que desea borrar este producto?",
+      title: "¿Está seguro de que desea borrar el producto "+ producto.nombre + "?",
       text: "Una vez borrado no puede recuperarlo",
       icon: "warning",
       buttons: true,
